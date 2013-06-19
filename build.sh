@@ -1,6 +1,6 @@
 #!/bin/bash
 
-build_dir="${TMPDIR}cultuurnet";
+build_dir="${TMPDIR}culturefeed";
 
 current_dir=$PWD
 
@@ -11,10 +11,10 @@ cd $build_dir;
 
 drush make -y "${current_dir}/drupal-org-core.make";
 
-mkdir profiles/cultuurnet;
-cp -R "${current_dir}"/* ./profiles/cultuurnet/;
+mkdir profiles/culturefeed_kickstart;
+cp -R "${current_dir}"/* ./profiles/culturefeed_kickstart/;
 
-cd profiles/cultuurnet;
+cd profiles/culturefeed_kickstart;
 
 # The following currently does not work as drupal.org does not allow
 # to include modules not hosted on git.drupal.org

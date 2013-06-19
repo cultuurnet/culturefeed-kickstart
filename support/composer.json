@@ -4,5 +4,5 @@
     "cultuurnet/search": "1.0.*@dev",
     "cultuurnet/cdb": "2.*@dev"
   },
-  "minimum-stability": "dev
+  "minimum-stability": "dev"
 }

@@ -46,7 +46,7 @@ function culturefeed_kickstart_credentials_form($form, &$form_state, &$install_s
     '#title' => t('CultureFeed'),
   );
   
-  $form['cnapi']['culturefeed_api_location'] = array(
+  $form['culturefeed']['culturefeed_api_location'] = array(
     '#title' => t('API location'),
     '#type' => t('textfield'),
     '#default_value' => $defaults['culturefeed_api_location'],

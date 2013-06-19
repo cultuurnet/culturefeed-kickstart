@@ -17,8 +17,11 @@ function culturefeed_kickstart_install() {
   $import = new CultureFeedCityImport();
   $import->import();
   
-  // Set additional variables.
+  // enable some modules.
+  module_enable(array('block'));
   
   // Enable blocks for pages.
+  
+  // Set additional variables.
   
 }
