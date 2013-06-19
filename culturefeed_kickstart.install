@@ -21,7 +21,136 @@ function culturefeed_kickstart_install() {
   module_enable(array('block'));
   
   // Enable blocks for pages.
+  theme_enable(array('bootstrap'));
+  variable_set('theme_default', 'bootstrap');
+  $default_theme = variable_get('theme_default', 'bartik');
+  $admin_theme = 'seven';
+  $blocks = array(
+    
+    // Search components
+    array(
+      'module' => 'culturefeed_search_ui',
+      'delta' => 'culturefeed-search-activefilters',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => 0,
+      'region' => 'content',
+      'pages' => '',
+      'cache' => -1,
+    ),
+    array(
+      'module' => 'culturefeed_search_ui',
+      'delta' => 'culturefeed-search-sortorder',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => 0,
+      'region' => 'content',
+      'pages' => '',
+      'cache' => -1,
+    ),
+    array(
+      'module' => 'culturefeed_search_ui',
+      'delta' => 'facet-eventtype',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => 0,
+      'region' => 'sidebar_first',
+      'visibility' => 1,
+      'pages' => 'agenda/search*',
+      'cache' => -1,
+    ),
+    array(
+      'module' => 'culturefeed_search_ui',
+      'delta' => 'facet-datetype',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => 0,
+      'region' => 'sidebar_first',
+      'visibility' => 1,
+      'pages' => 'agenda/search*',
+      'cache' => -1,
+    ),
+    array(
+      'module' => 'culturefeed_search_ui',
+      'delta' => 'facet-city',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => 0,
+      'region' => 'sidebar_first',
+      'visibility' => 1,
+      'pages' => 'agenda/search*',
+      'cache' => -1,
+    ),
+    
+    // profile components.
+    array(
+      'module' => 'culturefeed_ui',
+      'delta' => 'profile_box',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => 0,
+      'region' => 'header',
+      'pages' => '',
+      'cache' => -1,
+    ),
+    array(
+      'module' => 'culturefeed_ui',
+      'delta' => 'profile_menu',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => 0,
+      'region' => 'sidebar_first',
+      'pages' => '',
+      'cache' => -1,
+    ),
+    array(
+      'module' => 'culturefeed_ui',
+      'delta' => 'connect',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => 0,
+      'region' => 'header',
+      'pages' => '',
+      'cache' => -1,
+    ),
+    
+    // Culturefeed agenda.
+    array(
+      'module' => 'culturefeed_agenda',
+      'delta' => 'agenda-search-block',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => -5,
+      'region' => 'content',
+      'pages' => '',
+      'cache' => -1,
+    ),
+    
+    // Culturefeed social
+    array(
+      'module' => 'culturefeed_social',
+      'delta' => 'comments',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' =>  5,
+      'region' => 'content',
+      'visibility' => 1,
+      'pages' => 'node/*',
+      'cache' => -1,
+    ),
+    
+  );
+  $query = db_insert('block')->fields(array('module', 'delta', 'theme', 'status', 'weight', 'region', 'pages', 'cache'));
+  foreach ($blocks as $block) {
+    $query->values($block);
+  }
+  $query->execute();
   
   // Set additional variables.
+  variable_set('culturefeed_search_debug_mode', TRUE);
+  // CULTUREFEED_SEARCH_UI_PAGER_INFINITE_SCROLL
+  variable_set('culturefeed_search_ui_pager_type', 1);
+  
+  variable_set('culturefeed_social_report_destin', 1);
   
 }

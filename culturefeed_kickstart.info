@@ -14,3 +14,5 @@ dependencies[] = culturefeed_pages
 dependencies[] = module_filter
 dependencies[] = devel
 dependencies[] = admin_menu_toolbar
+
+dependencies[] = bootstrap
