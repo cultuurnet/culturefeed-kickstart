@@ -1,0 +1,24 @@
+<?php
+/**
+ * @file 
+ * Installation file to add configuration and displays for the Kickstart project.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function culturefeed_kickstart_install() {
+  
+  // Import the domains and terms.
+  $import = new CultureFeedDomainImport();
+  $import->import();
+
+  // Import the cities.
+  $import = new CultureFeedCityImport();
+  $import->import();
+  
+  // Set additional variables.
+  
+  // Enable blocks for pages.
+  
+}

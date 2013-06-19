@@ -1,0 +1,8 @@
+{
+  "require": {
+    "cultuurnet/auth": "1.0.*@dev",
+    "cultuurnet/search": "1.0.*@dev",
+    "cultuurnet/cdb": "2.*@dev"
+  },
+  "minimum-stability": "dev
+}
