@@ -57,12 +57,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cultuurnet/Cdb.git",
-                "reference": "022e7b96bbf74ef912900667ecbe5c67972e1c00"
+                "reference": "efa1f50394a0bb22188a02dc553d0da06f819b20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cultuurnet/Cdb/zipball/022e7b96bbf74ef912900667ecbe5c67972e1c00",
-                "reference": "022e7b96bbf74ef912900667ecbe5c67972e1c00",
+                "url": "https://api.github.com/repos/cultuurnet/Cdb/zipball/efa1f50394a0bb22188a02dc553d0da06f819b20",
+                "reference": "efa1f50394a0bb22188a02dc553d0da06f819b20",
                 "shasum": ""
             },
             "type": "library",
@@ -91,12 +91,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cultuurnet/Search.git",
-                "reference": "408aa21fc9365d3f4b599b9aa0a85a1b2f60ce9f"
+                "reference": "ab834f484eea770fe8eb8c5cd864538a5a502459"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cultuurnet/Search/zipball/408aa21fc9365d3f4b599b9aa0a85a1b2f60ce9f",
-                "reference": "408aa21fc9365d3f4b599b9aa0a85a1b2f60ce9f",
+                "url": "https://api.github.com/repos/cultuurnet/Search/zipball/ab834f484eea770fe8eb8c5cd864538a5a502459",
+                "reference": "ab834f484eea770fe8eb8c5cd864538a5a502459",
                 "shasum": ""
             },
             "require": {
