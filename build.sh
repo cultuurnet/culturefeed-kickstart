@@ -1,6 +1,15 @@
 #!/bin/bash
 
+echo "where you want to install: \c"
+read build_dir
+
+echo "build_dir: $build_dir"
+
+if [ -z "$build_dir" ]; 
+then 
 build_dir="${TMPDIR}culturefeed";
+echo "create site in $build_dir" 
+fi
 
 current_dir=$PWD
 
