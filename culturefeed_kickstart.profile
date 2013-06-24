@@ -34,11 +34,11 @@ function culturefeed_kickstart_credentials_form($form, &$form_state, &$install_s
   $defaults = array();
   $defaults += array(
     'culturefeed_search_api_location' => 'http://test.uitid.be/culturefeed/rest/searchv2/',
-    'culturefeed_search_api_application_key' => '1fc6b3fcde6e612ede360715045713f3',
-    'culturefeed_search_api_shared_secret' => 'e626845f1e95db4330a2a8803d83edf5',
+    'culturefeed_search_api_application_key' => 'e36c2db19aeb6d2760ce0500d393e83c',
+    'culturefeed_search_api_shared_secret' => 'f0d991505f50d5da23b1157bce133aa9',
     'culturefeed_api_location' => 'http://test.uitid.be/culturefeed/rest/',
-    'culturefeed_api_application_key' => '1fc6b3fcde6e612ede360715045713f3',
-    'culturefeed_api_shared_secret' => 'e626845f1e95db4330a2a8803d83edf5',
+    'culturefeed_api_application_key' => 'e36c2db19aeb6d2760ce0500d393e83c',
+    'culturefeed_api_shared_secret' => 'f0d991505f50d5da23b1157bce133aa9',
   );
 
   $form['culturefeed'] = array(
