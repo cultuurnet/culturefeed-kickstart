@@ -150,7 +150,10 @@ function culturefeed_kickstart_install() {
   variable_set('culturefeed_search_debug_mode', TRUE);
   // CULTUREFEED_SEARCH_UI_PAGER_INFINITE_SCROLL
   variable_set('culturefeed_search_ui_pager_type', 1);
-  
+
   variable_set('culturefeed_social_report_destin', 1);
+  
+  // Set the domain id
+  variable_set('agenda_search_block_domain_id', 'eventtype');
   
 }
