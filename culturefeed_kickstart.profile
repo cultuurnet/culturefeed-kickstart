@@ -33,10 +33,10 @@ function culturefeed_kickstart_credentials_form($form, &$form_state, &$install_s
   // @todo Get defaults from a webservice in the previous step?
   $defaults = array();
   $defaults += array(
-    'culturefeed_search_api_location' => 'http://searchv2.cultuurnet.lodgon.com/search-poc/rest/',
+    'culturefeed_search_api_location' => 'http://test.uitid.be/culturefeed/rest/searchv2/',
     'culturefeed_search_api_application_key' => '1fc6b3fcde6e612ede360715045713f3',
     'culturefeed_search_api_shared_secret' => 'e626845f1e95db4330a2a8803d83edf5',
-    'culturefeed_api_location' => 'http://test.UiTiD.be/culturefeed/rest/',
+    'culturefeed_api_location' => 'http://test.uitid.be/culturefeed/rest/',
     'culturefeed_api_application_key' => '1fc6b3fcde6e612ede360715045713f3',
     'culturefeed_api_shared_secret' => 'e626845f1e95db4330a2a8803d83edf5',
   );
