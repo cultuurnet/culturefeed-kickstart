@@ -17,127 +17,318 @@ function culturefeed_kickstart_install() {
   $import = new CultureFeedCityImport();
   $import->import();
   
-  // enable some modules.
+  // Enable some modules.
   module_enable(array('block'));
   
-  // Enable blocks for pages.
-  theme_enable(array('bootstrap'));
+  // Enable themes
+  theme_enable(array('bootstrap','seven'));
   variable_set('theme_default', 'bootstrap');
-  $default_theme = variable_get('theme_default', 'bartik');
-  $admin_theme = 'seven';
+  variable_set('admin_theme', 'seven');
+  $default_theme = variable_get('theme_default', 'bootstrap');
+  
+  // Enable blocks for pages
   $blocks = array(
+
+    // Module culturefeed_agenda
+    array(
+      'module' => 'culturefeed_agenda',
+      'delta' => 'agenda-related-activities',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => -31,
+      'region' => 'sidebar_second',
+      'pages' => 'agenda/e/*\r\nagenda/p/*',
+      'cache' => -1
+    ),
+    array(
+      'module' => 'culturefeed_agenda',
+      'delta' => 'agenda-search-block',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => -31,
+      'region' => 'content',
+      'pages' => '',
+      'cache' => -1
+    ),
+    array(
+      'module' => 'culturefeed_agenda',
+      'delta' => 'actor-program',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => 10,
+      'region' => 'content',
+      'pages' => 'agenda/a/*',
+      'cache' => -1
+    ),
+    array(
+      'module' => 'culturefeed_agenda',
+      'delta' => 'production-program',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => 10,
+      'region' => 'content',
+      'pages' => 'agenda/p/*',
+      'cache' => -1
+    ),
     
-    // Search components
+    // Module culturefeed_messages
+    array(
+      'module' => 'culturefeed_messages',
+      'delta' => 'inbox',
+      'theme' => 'cultuurkuur_bootstrap',
+      'status' => 1,
+      'weight' => -30,
+      'region' => 'sidebar_first',
+      'pages' => 'culturefeed/messages\r\nculturefeed/messages/*',
+      'cache' => -1
+    ),
+    array(
+      'module' => 'culturefeed_messages',
+      'delta' => 'page-inbox',
+      'theme' => 'cultuurkuur_bootstrap',
+      'status' => 1,
+      'weight' => -31,
+      'region' => 'sidebar_first',
+      'pages' => 'pages/*/messages\r\npages/*/messages/*',
+      'cache' => -1
+    ),
+
+    // Module culturefeed_pages
+    array(
+      'module' => 'culturefeed_pages',
+      'delta' => 'user-fellow-members',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => -27,
+      'region' => 'sidebar_second',
+      'pages' => '',
+      'cache' => -1
+    ),
+    array(
+      'module' => 'culturefeed_pages',
+      'delta' => 'pages-user-follows',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => -7,
+      'region' => 'sidebar_second',
+      'pages' => 'user/*',
+      'cache' => -1
+    ),
+    array('module' => 'culturefeed_pages',
+      'delta' => 'pages-admin-options',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => -33,
+      'region' => 'highlighted',
+      'pages' => 'agenda/g/*',
+      'cache' => -1
+    ),
+    array(
+      'module' => 'culturefeed_pages',
+      'delta' => 'pages-admin-menu',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => -26,
+      'region' => 'sidebar_second',
+      'pages' => 'pages/*/edit\r\npages/*/configuration',
+      'cache' => -1
+    ),
+    array(
+      'module' => 'culturefeed_pages',
+      'delta' => 'page-timeline',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => -32,
+      'region' => 'content',
+      'pages' => 'agenda/g*',
+      'cache' => -1
+    ),
+    array(
+      'module' => 'culturefeed_pages',
+      'delta' => 'followers',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => -32,
+      'region' => 'sidebar_second',
+      'pages' => 'agenda/g/*',
+      'cache' => -1
+    ),
+    array(
+      'module' => 'culturefeed_pages',
+      'delta' => 'page-agenda',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => -33,
+      'region' => 'content',
+      'pages' => 'agenda/g/*',
+      'cache' => 2
+    ),
+    
+    // Module culturefeed_search_ui
     array(
       'module' => 'culturefeed_search_ui',
       'delta' => 'culturefeed-search-activefilters',
       'theme' => $default_theme,
       'status' => 1,
-      'weight' => 0,
+      'weight' => -39,
+      'region' => 'content',
+      'pages' => 'agenda/search\r\nagenda/pages',
+      'cache' => -1
+    ),
+    array(
+      'module' => 'culturefeed_search_ui',
+      'delta' => 'culturefeed-search-box',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => -28,
       'region' => 'content',
       'pages' => '',
-      'cache' => -1,
+      'cache' => -1
     ),
     array(
       'module' => 'culturefeed_search_ui',
       'delta' => 'culturefeed-search-sortorder',
       'theme' => $default_theme,
       'status' => 1,
-      'weight' => 0,
+      'weight' => -37,
       'region' => 'content',
-      'pages' => '',
-      'cache' => -1,
+      'pages' => 'agenda/search*',
+      'cache' => -1
     ),
     array(
       'module' => 'culturefeed_search_ui',
-      'delta' => 'facet-eventtype',
+      'delta' => 'facet-actortype',
       'theme' => $default_theme,
       'status' => 1,
-      'weight' => 0,
+      'weight' => -37,
       'region' => 'sidebar_first',
-      'visibility' => 1,
-      'pages' => 'agenda/search*',
-      'cache' => -1,
+      'pages' => 'agenda/pages',
+      'cache' => -1
     ),
     array(
       'module' => 'culturefeed_search_ui',
       'delta' => 'facet-datetype',
       'theme' => $default_theme,
       'status' => 1,
-      'weight' => 0,
+      'weight' => -34,
       'region' => 'sidebar_first',
-      'visibility' => 1,
-      'pages' => 'agenda/search*',
-      'cache' => -1,
+      'pages' => 'agenda/search',
+      'cache' => -1
     ),
     array(
       'module' => 'culturefeed_search_ui',
       'delta' => 'facet-city',
       'theme' => $default_theme,
       'status' => 1,
-      'weight' => 0,
+      'weight' => -38,
       'region' => 'sidebar_first',
-      'visibility' => 1,
-      'pages' => 'agenda/search*',
-      'cache' => -1,
+      'pages' => 'agenda/search\r\nagenda/pages',
+      'cache' => -1
+    ),
+    array(
+      'module' => 'culturefeed_search_ui',
+      'delta' => 'facet-eventtype',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => -34,
+      'region' => 'sidebar_first',
+      'pages' => 'agenda/search',
+      'cache' => -1
     ),
     
-    // profile components.
+    // Module culturefeed_social
+    array(
+      'module' => 'culturefeed_social',
+      'delta' => 'recent-activities',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => 0,
+      'region' => 'sidebar_second',
+      'pages' => '<front>',
+      'cache' => -1
+    ),
+    array(
+      'module' => 'culturefeed_social',
+      'delta' => 'comments',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => -34,
+      'region' => 'content',
+      'pages' => 'agenda/e/*\r\nagenda/p/*\r\node/*',
+      'cache' => -1
+    ),
+    array(
+      'module' => 'culturefeed_social',
+      'delta' => 'user-activities',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => -35,
+      'region' => 'content',
+      'pages' => 'user*',
+      'cache' => -1
+    ),
+    array(
+      'module' => 'culturefeed_social',
+      'delta' => 'recommended-by',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => -31,
+      'region' => 'sidebar_second',
+      'pages' => 'agenda/e/*\r\nagenda/p/*',
+      'cache' => -1
+    ),
+    array(
+      'module' => 'culturefeed_social',
+      'delta' => 'followers',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => -31,
+      'region' => 'sidebar_second',
+      'pages' => 'agenda/g/*',
+      'cache' => -1
+    ),
+    array(
+      'module' => 'culturefeed_social',
+      'delta' => 'recommendations',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => -31,
+      'region' => 'content','pages' => 'agenda/e/*\r\nagenda/p/*',
+      'cache' => -1
+    ),
+
+    // Module culturefeed_ui
     array(
       'module' => 'culturefeed_ui',
       'delta' => 'profile_box',
       'theme' => $default_theme,
       'status' => 1,
-      'weight' => 0,
-      'region' => 'header',
+      'weight' => -29,
+      'region' => 'navigation',
       'pages' => '',
-      'cache' => -1,
+      'cache' => -1
     ),
     array(
       'module' => 'culturefeed_ui',
       'delta' => 'profile_menu',
       'theme' => $default_theme,
       'status' => 1,
-      'weight' => 0,
-      'region' => 'sidebar_first',
-      'pages' => '',
-      'cache' => -1,
+      'weight' => -28,
+      'region' => 'sidebar_second',
+      'pages' => 'culturefeed/profile/*\r\nculturefeed/account/*\r\nculturefeed/activities/*\r\nculturefeed/pages/*user/*',
+      'cache' => -1
     ),
     array(
       'module' => 'culturefeed_ui',
-      'delta' => 'connect',
+      'delta' => 'my_uitid',
       'theme' => $default_theme,
       'status' => 1,
-      'weight' => 0,
-      'region' => 'header',
-      'pages' => '',
-      'cache' => -1,
+      'weight' => -60,
+      'region' => 'sidebar_second',
+      'pages' => 'agenda/e*\r\nagenda/p*\r\nagenda/a*\r\nagenda/g*',
+      'cache' => -1
     ),
     
-    // Culturefeed agenda.
-    array(
-      'module' => 'culturefeed_agenda',
-      'delta' => 'agenda-search-block',
-      'theme' => $default_theme,
-      'status' => 1,
-      'weight' => -5,
-      'region' => 'content',
-      'pages' => '',
-      'cache' => -1,
-    ),
-    
-    // Culturefeed social
-    array(
-      'module' => 'culturefeed_social',
-      'delta' => 'comments',
-      'theme' => $default_theme,
-      'status' => 1,
-      'weight' =>  5,
-      'region' => 'content',
-      'visibility' => 1,
-      'pages' => 'node/*',
-      'cache' => -1,
-    ),
     
   );
   $query = db_insert('block')->fields(array('module', 'delta', 'theme', 'status', 'weight', 'region', 'pages', 'cache'));
@@ -150,10 +341,33 @@ function culturefeed_kickstart_install() {
   variable_set('culturefeed_search_debug_mode', TRUE);
   // CULTUREFEED_SEARCH_UI_PAGER_INFINITE_SCROLL
   variable_set('culturefeed_search_ui_pager_type', 1);
-
   variable_set('culturefeed_social_report_destin', 1);
-  
   // Set the domain id
   variable_set('agenda_search_block_domain_id', 'eventtype');
+  
+  // Configure default permissions for each role
+  db_query("INSERT INTO {role_permission} (rid, permission, module) VALUES (1, 'access content', 'node')");
+  
+  // Insert default user-defined node types into the database
+  $type = array(
+      'type' => 'page',
+      'name' => t('Page'),
+      'base' => 'node_content',
+      'description' => t('If you want to add a static page, like a contact page or an about page, use a page.'),
+      'custom' => 1,
+      'modified' => 1,
+      'locked' => 0,
+  );
+  
+  $type = node_type_set_defaults($type);
+  node_type_save($type);
+  node_add_body_field($type);
+
+  // Default page to not be promoted and have comments disabled.
+  $theme_settings = variable_get('theme_settings', array());
+  $theme_settings['toggle_node_info_page'] = FALSE;
+  variable_set('comment_page', COMMENT_NODE_DISABLED);
+  variable_set('theme_settings', $theme_settings);
+
   
 }
