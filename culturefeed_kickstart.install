@@ -46,7 +46,7 @@ function culturefeed_kickstart_install() {
       'theme' => $default_theme,
       'status' => 1,
       'weight' => -31,
-      'region' => 'content',
+      'region' => 'highlighted',
       'pages' => '',
       'cache' => -1
     ),
@@ -173,16 +173,6 @@ function culturefeed_kickstart_install() {
       'weight' => -39,
       'region' => 'content',
       'pages' => 'agenda/search\r\nagenda/pages',
-      'cache' => -1
-    ),
-    array(
-      'module' => 'culturefeed_search_ui',
-      'delta' => 'culturefeed-search-box',
-      'theme' => $default_theme,
-      'status' => 1,
-      'weight' => -28,
-      'region' => 'content',
-      'pages' => '',
       'cache' => -1
     ),
     array(
