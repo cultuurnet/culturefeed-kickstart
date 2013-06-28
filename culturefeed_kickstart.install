@@ -346,8 +346,9 @@ function culturefeed_kickstart_install() {
     ),
     
   );
-  $query = db_insert('block')->fields(array('module', 'delta', 'theme', 'status', 'weight', 'region', 'pages', 'cache'));
+  $query = db_insert('block')->fields(array('module', 'delta', 'theme', 'status', 'weight', 'region', 'pages', 'cache', 'visibility'));
   foreach ($blocks as $block) {
+    $block['visibility'] = isset($block['visibility']) ? $block['visibility'] : 0;
     $query->values($block);
   }
   $query->execute();
