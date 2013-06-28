@@ -37,7 +37,8 @@ function culturefeed_kickstart_install() {
       'status' => 1,
       'weight' => -31,
       'region' => 'sidebar_second',
-      'pages' => 'agenda/e/*\r\nagenda/p/*',
+      'pages' => "agenda/e/*\r\nagenda/p/*",
+      'visibility' => 1,
       'cache' => -1
     ),
     array(
@@ -58,6 +59,7 @@ function culturefeed_kickstart_install() {
       'weight' => 10,
       'region' => 'content',
       'pages' => 'agenda/a/*',
+      'visibility' => 1,
       'cache' => -1
     ),
     array(
@@ -68,6 +70,7 @@ function culturefeed_kickstart_install() {
       'weight' => 10,
       'region' => 'content',
       'pages' => 'agenda/p/*',
+      'visibility' => 1,
       'cache' => -1
     ),
     
@@ -79,7 +82,8 @@ function culturefeed_kickstart_install() {
       'status' => 1,
       'weight' => -30,
       'region' => 'sidebar_first',
-      'pages' => 'culturefeed/messages\r\nculturefeed/messages/*',
+      'pages' => "culturefeed/messages\r\nculturefeed/messages/*",
+      'visibility' => 1,
       'cache' => -1
     ),
     array(
@@ -89,7 +93,8 @@ function culturefeed_kickstart_install() {
       'status' => 1,
       'weight' => -31,
       'region' => 'sidebar_first',
-      'pages' => 'pages/*/messages\r\npages/*/messages/*',
+      'pages' => "pages/*/messages\r\npages/*/messages/*",
+      'visibility' => 1,
       'cache' => -1
     ),
 
@@ -112,6 +117,7 @@ function culturefeed_kickstart_install() {
       'weight' => -7,
       'region' => 'sidebar_second',
       'pages' => 'user/*',
+      'visibility' => 1,
       'cache' => -1
     ),
     array('module' => 'culturefeed_pages',
@@ -121,6 +127,7 @@ function culturefeed_kickstart_install() {
       'weight' => -33,
       'region' => 'highlighted',
       'pages' => 'agenda/g/*',
+      'visibility' => 1,
       'cache' => -1
     ),
     array(
@@ -130,7 +137,8 @@ function culturefeed_kickstart_install() {
       'status' => 1,
       'weight' => -26,
       'region' => 'sidebar_second',
-      'pages' => 'pages/*/edit\r\npages/*/configuration',
+      'pages' => "pages/*/edit\r\npages/*/configuration",
+      'visibility' => 1,
       'cache' => -1
     ),
     array(
@@ -141,6 +149,7 @@ function culturefeed_kickstart_install() {
       'weight' => -32,
       'region' => 'content',
       'pages' => 'agenda/g*',
+      'visibility' => 1,
       'cache' => -1
     ),
     array(
@@ -151,6 +160,7 @@ function culturefeed_kickstart_install() {
       'weight' => -32,
       'region' => 'sidebar_second',
       'pages' => 'agenda/g/*',
+      'visibility' => 1,
       'cache' => -1
     ),
     array(
@@ -161,6 +171,7 @@ function culturefeed_kickstart_install() {
       'weight' => -33,
       'region' => 'content',
       'pages' => 'agenda/g/*',
+      'visibility' => 1,
       'cache' => 2
     ),
     
@@ -172,7 +183,8 @@ function culturefeed_kickstart_install() {
       'status' => 1,
       'weight' => -39,
       'region' => 'content',
-      'pages' => 'agenda/search\r\nagenda/pages',
+      'pages' => "agenda/search\r\nagenda/pages",
+      'visibility' => 1,
       'cache' => -1
     ),
     array(
@@ -183,6 +195,7 @@ function culturefeed_kickstart_install() {
       'weight' => -37,
       'region' => 'content',
       'pages' => 'agenda/search*',
+      'visibility' => 1,
       'cache' => -1
     ),
     array(
@@ -193,6 +206,7 @@ function culturefeed_kickstart_install() {
       'weight' => -37,
       'region' => 'sidebar_first',
       'pages' => 'agenda/pages',
+      'visibility' => 1,
       'cache' => -1
     ),
     array(
@@ -203,6 +217,7 @@ function culturefeed_kickstart_install() {
       'weight' => -34,
       'region' => 'sidebar_first',
       'pages' => 'agenda/search',
+      'visibility' => 1,
       'cache' => -1
     ),
     array(
@@ -212,7 +227,8 @@ function culturefeed_kickstart_install() {
       'status' => 1,
       'weight' => -38,
       'region' => 'sidebar_first',
-      'pages' => 'agenda/search\r\nagenda/pages',
+      'pages' => "agenda/search\r\nagenda/pages",
+      'visibility' => 1,
       'cache' => -1
     ),
     array(
@@ -223,6 +239,7 @@ function culturefeed_kickstart_install() {
       'weight' => -34,
       'region' => 'sidebar_first',
       'pages' => 'agenda/search',
+      'visibility' => 1,
       'cache' => -1
     ),
     
@@ -235,6 +252,7 @@ function culturefeed_kickstart_install() {
       'weight' => 0,
       'region' => 'sidebar_second',
       'pages' => '<front>',
+      'visibility' => 1,
       'cache' => -1
     ),
     array(
@@ -244,7 +262,8 @@ function culturefeed_kickstart_install() {
       'status' => 1,
       'weight' => -34,
       'region' => 'content',
-      'pages' => 'agenda/e/*\r\nagenda/p/*\r\node/*',
+      'pages' => "agenda/e/*\r\nagenda/p/*\r\node/*",
+      'visibility' => 1,
       'cache' => -1
     ),
     array(
@@ -255,6 +274,7 @@ function culturefeed_kickstart_install() {
       'weight' => -35,
       'region' => 'content',
       'pages' => 'user*',
+      'visibility' => 1,
       'cache' => -1
     ),
     array(
@@ -264,7 +284,8 @@ function culturefeed_kickstart_install() {
       'status' => 1,
       'weight' => -31,
       'region' => 'sidebar_second',
-      'pages' => 'agenda/e/*\r\nagenda/p/*',
+      'pages' => "agenda/e/*\r\nagenda/p/*",
+      'visibility' => 1,
       'cache' => -1
     ),
     array(
@@ -275,6 +296,7 @@ function culturefeed_kickstart_install() {
       'weight' => -31,
       'region' => 'sidebar_second',
       'pages' => 'agenda/g/*',
+      'visibility' => 1,
       'cache' => -1
     ),
     array(
@@ -283,7 +305,9 @@ function culturefeed_kickstart_install() {
       'theme' => $default_theme,
       'status' => 1,
       'weight' => -31,
-      'region' => 'content','pages' => 'agenda/e/*\r\nagenda/p/*',
+      'region' => 'content',
+      'pages' => "agenda/e/*\r\nagenda/p/*",
+      'visibility' => 1,
       'cache' => -1
     ),
 
@@ -305,7 +329,8 @@ function culturefeed_kickstart_install() {
       'status' => 1,
       'weight' => -28,
       'region' => 'sidebar_second',
-      'pages' => 'culturefeed/profile/*\r\nculturefeed/account/*\r\nculturefeed/activities/*\r\nculturefeed/pages/*user/*',
+      'pages' => "culturefeed/profile/*\r\nculturefeed/account/*\r\nculturefeed/activities/*\r\nculturefeed/pages/*user/*",
+      'visibility' => 1,
       'cache' => -1
     ),
     array(
@@ -315,10 +340,10 @@ function culturefeed_kickstart_install() {
       'status' => 1,
       'weight' => -60,
       'region' => 'sidebar_second',
-      'pages' => 'agenda/e*\r\nagenda/p*\r\nagenda/a*\r\nagenda/g*',
+      'pages' => "agenda/e*\r\nagenda/p*\r\nagenda/a*\r\nagenda/g*",
+      'visibility' => 1,
       'cache' => -1
     ),
-    
     
   );
   $query = db_insert('block')->fields(array('module', 'delta', 'theme', 'status', 'weight', 'region', 'pages', 'cache'));
@@ -336,9 +361,9 @@ function culturefeed_kickstart_install() {
   variable_set('agenda_search_block_domain_id', 'eventtype');
   
   // Configure default permissions for each role
-  db_query("INSERT INTO {role_permission} (rid, permission, module) VALUES (1, 'access content', 'node')");
+  db_query("INSERT INTO {role_permission} (rid, permission, module) VALUES (1, 'access content', 'node'), (2, 'access content', 'node')");
   
-  // Insert default user-defined node types into the database
+  // Insert default user-defined node types into the database.
   $type = array(
       'type' => 'page',
       'name' => t('Page'),
