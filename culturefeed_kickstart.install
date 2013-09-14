@@ -21,10 +21,10 @@ function culturefeed_kickstart_install() {
   module_enable(array('block'));
   
   // Enable themes
-  theme_enable(array('bootstrap','seven'));
-  variable_set('theme_default', 'bootstrap');
+  theme_enable(array('bootstrap','culturefeed_bootstrap','seven'));
+  variable_set('theme_default', 'culturefeed_bootstrap');
   variable_set('admin_theme', 'seven');
-  $default_theme = variable_get('theme_default', 'bootstrap');
+  $default_theme = variable_get('theme_default', 'culturefeed_bootstrap');
   
   // Enable blocks for pages
   $blocks = array(
@@ -329,7 +329,7 @@ function culturefeed_kickstart_install() {
       'status' => 1,
       'weight' => -28,
       'region' => 'sidebar_second',
-      'pages' => "culturefeed/profile/*\r\nculturefeed/account/*\r\nculturefeed/activities/*\r\nculturefeed/pages/*user/*",
+      'pages' => "culturefeed/profile/*\r\nculturefeed/account/*\r\nculturefeed/activities/*\r\nculturefeed/pages/*\r\nuser/*",
       'visibility' => 1,
       'cache' => -1
     ),
