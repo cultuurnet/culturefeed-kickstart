@@ -74,107 +74,6 @@ function culturefeed_kickstart_install() {
       'cache' => -1
     ),
     
-    // Module culturefeed_messages
-    array(
-      'module' => 'culturefeed_messages',
-      'delta' => 'inbox',
-      'theme' => 'cultuurkuur_bootstrap',
-      'status' => 1,
-      'weight' => -30,
-      'region' => 'sidebar_first',
-      'pages' => "culturefeed/messages\r\nculturefeed/messages/*",
-      'visibility' => 1,
-      'cache' => -1
-    ),
-    array(
-      'module' => 'culturefeed_messages',
-      'delta' => 'page-inbox',
-      'theme' => 'cultuurkuur_bootstrap',
-      'status' => 1,
-      'weight' => -31,
-      'region' => 'sidebar_first',
-      'pages' => "pages/*/messages\r\npages/*/messages/*",
-      'visibility' => 1,
-      'cache' => -1
-    ),
-
-    // Module culturefeed_pages
-    array(
-      'module' => 'culturefeed_pages',
-      'delta' => 'user-fellow-members',
-      'theme' => $default_theme,
-      'status' => 1,
-      'weight' => -27,
-      'region' => 'sidebar_second',
-      'pages' => '',
-      'cache' => -1
-    ),
-    array(
-      'module' => 'culturefeed_pages',
-      'delta' => 'pages-user-follows',
-      'theme' => $default_theme,
-      'status' => 1,
-      'weight' => -7,
-      'region' => 'sidebar_second',
-      'pages' => 'user/*',
-      'visibility' => 1,
-      'cache' => -1
-    ),
-    array('module' => 'culturefeed_pages',
-      'delta' => 'pages-admin-options',
-      'theme' => $default_theme,
-      'status' => 1,
-      'weight' => -33,
-      'region' => 'highlighted',
-      'pages' => 'agenda/g/*',
-      'visibility' => 1,
-      'cache' => -1
-    ),
-    array(
-      'module' => 'culturefeed_pages',
-      'delta' => 'pages-admin-menu',
-      'theme' => $default_theme,
-      'status' => 1,
-      'weight' => -26,
-      'region' => 'sidebar_second',
-      'pages' => "pages/*/edit\r\npages/*/configuration",
-      'visibility' => 1,
-      'cache' => -1
-    ),
-    array(
-      'module' => 'culturefeed_pages',
-      'delta' => 'page-timeline',
-      'theme' => $default_theme,
-      'status' => 1,
-      'weight' => -32,
-      'region' => 'content',
-      'pages' => 'agenda/g*',
-      'visibility' => 1,
-      'cache' => -1
-    ),
-    array(
-      'module' => 'culturefeed_pages',
-      'delta' => 'followers',
-      'theme' => $default_theme,
-      'status' => 1,
-      'weight' => -32,
-      'region' => 'sidebar_second',
-      'pages' => 'agenda/g/*',
-      'visibility' => 1,
-      'cache' => -1
-    ),
-    array(
-      'module' => 'culturefeed_pages',
-      'delta' => 'page-agenda',
-      'theme' => $default_theme,
-      'status' => 1,
-      'weight' => -33,
-      'region' => 'content',
-      'pages' => 'agenda/g/*',
-      'visibility' => 1,
-      'cache' => 2
-    ),
-    
     // Module culturefeed_search_ui
     array(
       'module' => 'culturefeed_search_ui',
@@ -260,7 +159,7 @@ function culturefeed_kickstart_install() {
       'delta' => 'comments',
       'theme' => $default_theme,
       'status' => 1,
-      'weight' => -34,
+      'weight' => 5,
       'region' => 'content',
       'pages' => "agenda/e/*\r\nagenda/p/*\r\node/*",
       'visibility' => 1,

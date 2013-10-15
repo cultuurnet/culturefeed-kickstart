@@ -6,10 +6,8 @@ dependencies[] = culturefeed
 dependencies[] = culturefeed_ui
 dependencies[] = culturefeed_search
 dependencies[] = culturefeed_search_ui
-dependencies[] = culturefeed_messages
 dependencies[] = culturefeed_agenda
 dependencies[] = culturefeed_social
-dependencies[] = culturefeed_pages
 
 dependencies[] = module_filter
 dependencies[] = devel
