@@ -1,7 +1,7 @@
 api = 2
 core = 7.x 
 
-projects[bootstrap][version] = "3.0-rc1"
+projects[bootstrap][version] = "7.x-2.2"
 projects[] = devel
 projects[] = module_filter
 projects[] = admin_menu
