@@ -4,9 +4,9 @@ core = 7.x
 projects[] = devel
 projects[] = module_filter
 projects[] = admin_menu
-projects[] = bootstrap
 projects[] = libraries
 projects[] = less
+projects[bootstrap][version] = 3.0-rc2
 
 projects[culturefeed][type] = module
 projects[culturefeed][download][type] = git
