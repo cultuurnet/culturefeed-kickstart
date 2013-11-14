@@ -12,5 +12,5 @@ dependencies[] = culturefeed_social
 dependencies[] = module_filter
 dependencies[] = devel
 dependencies[] = admin_menu_toolbar
-
-;dependencies[] = bootstrap
+dependencies[] = libraries
+dependencies[] = less

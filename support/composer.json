@@ -2,7 +2,8 @@
   "require": {
     "cultuurnet/auth": "1.0.*@dev",
     "cultuurnet/search": "1.0.*@dev",
-    "cultuurnet/cdb": "2.*@dev"
+    "cultuurnet/cdb": "2.*@dev",
+    "leafo/lessphp": ">=0.3.7"
   },
   "minimum-stability": "dev"
 }

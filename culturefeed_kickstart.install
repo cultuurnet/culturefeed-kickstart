@@ -18,12 +18,13 @@ function culturefeed_kickstart_install() {
   $import->import();
   
   // Enable some modules.
-  module_enable(array('block'));
+  module_enable(array('block','menu','contact','contextual'));
   
   // Enable themes
   theme_enable(array('bootstrap','culturefeed_bootstrap','seven'));
   variable_set('theme_default', 'culturefeed_bootstrap');
   variable_set('admin_theme', 'seven');
+  variable_set('node_admin_theme', '1');
   $default_theme = variable_get('theme_default', 'culturefeed_bootstrap');
   
   // Enable blocks for pages
@@ -252,10 +253,12 @@ function culturefeed_kickstart_install() {
   }
   $query->execute();
   
-  // Set additional variables.
-  variable_set('culturefeed_search_debug_mode', TRUE);
-  // CULTUREFEED_SEARCH_UI_PAGER_INFINITE_SCROLL
-  variable_set('culturefeed_search_ui_pager_type', 1);
+  // Set drupal variables
+  variable_set('menu_secondary_links_source', '');
+  
+  // Set additional culturefeed variables
+  // Use default pager (not infinite scroll)
+  variable_set('culturefeed_search_ui_pager_type', 0);
   variable_set('culturefeed_social_report_destin', 1);
   // Set the domain id
   variable_set('agenda_search_block_domain_id', 'eventtype');
@@ -263,7 +266,7 @@ function culturefeed_kickstart_install() {
   // Configure default permissions for each role
   db_query("INSERT INTO {role_permission} (rid, permission, module) VALUES (1, 'access content', 'node'), (2, 'access content', 'node')");
   
-  // Insert default user-defined node types into the database.
+  // Insert default user-defined node types into the database
   $type = array(
       'type' => 'page',
       'name' => t('Page'),

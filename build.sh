@@ -57,6 +57,8 @@ cd vendor/cultuurnet/cdb
 git checkout -b 2.x remotes/origin/2.x
 cd ../search
 git pull
+cd ../auth
+git pull
 
 # Switch back to working directory.
 cd ${current_dir};

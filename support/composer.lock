@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "72c538bc957e93d0b01b5943ddbd06a3",
+    "hash": "7f960cbd8025a597b3005e46b374eb0e",
     "packages": [
         {
             "name": "cultuurnet/auth",
@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cultuurnet/Auth.git",
-                "reference": "08d3d6ec8893992749bb702e2d3d8301c1ecbed8"
+                "reference": "e11fdd0ac0f7e1f16b7cb86e8deeed16bf5b6830"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cultuurnet/Auth/zipball/08d3d6ec8893992749bb702e2d3d8301c1ecbed8",
-                "reference": "08d3d6ec8893992749bb702e2d3d8301c1ecbed8",
+                "url": "https://api.github.com/repos/cultuurnet/Auth/zipball/e11fdd0ac0f7e1f16b7cb86e8deeed16bf5b6830",
+                "reference": "e11fdd0ac0f7e1f16b7cb86e8deeed16bf5b6830",
                 "shasum": ""
             },
             "require": {
@@ -24,7 +24,7 @@
                 "guzzle/plugin-cookie": "3.1.*",
                 "guzzle/plugin-log": "3.1.*",
                 "guzzle/plugin-oauth": "3.1.*",
-                "justinrainbow/json-schema": "1.1.*",
+                "justinrainbow/json-schema": "1.3.*",
                 "php": ">=5.3.0",
                 "symfony/console": "2.2.*"
             },
@@ -44,12 +44,12 @@
                     ]
                 }
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "Apache-2.0"
             ],
             "description": "Authentication service for CultuurNet web services",
-            "time": "2013-04-13 06:45:54"
+            "time": "2013-09-11 00:04:56"
         },
         {
             "name": "cultuurnet/cdb",
@@ -57,12 +57,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cultuurnet/Cdb.git",
-                "reference": "efa1f50394a0bb22188a02dc553d0da06f819b20"
+                "reference": "c41cad23eb427415b28ed1a4fb7fb8a6ec1a5675"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cultuurnet/Cdb/zipball/efa1f50394a0bb22188a02dc553d0da06f819b20",
-                "reference": "efa1f50394a0bb22188a02dc553d0da06f819b20",
+                "url": "https://api.github.com/repos/cultuurnet/Cdb/zipball/c41cad23eb427415b28ed1a4fb7fb8a6ec1a5675",
+                "reference": "c41cad23eb427415b28ed1a4fb7fb8a6ec1a5675",
                 "shasum": ""
             },
             "type": "library",
@@ -78,12 +78,12 @@
                     ]
                 }
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "Apache-2.0"
             ],
             "description": "PHP library for hydrating/manipulating CultuurNet's Cdb XML documents",
-            "time": "2013-05-02 14:41:47"
+            "time": "2013-10-04 14:34:18"
         },
         {
             "name": "cultuurnet/search",
@@ -91,12 +91,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cultuurnet/Search.git",
-                "reference": "ab834f484eea770fe8eb8c5cd864538a5a502459"
+                "reference": "5adb13a6994ba6c9cd83867fe151a278d51116b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cultuurnet/Search/zipball/ab834f484eea770fe8eb8c5cd864538a5a502459",
-                "reference": "ab834f484eea770fe8eb8c5cd864538a5a502459",
+                "url": "https://api.github.com/repos/cultuurnet/Search/zipball/5adb13a6994ba6c9cd83867fe151a278d51116b1",
+                "reference": "5adb13a6994ba6c9cd83867fe151a278d51116b1",
                 "shasum": ""
             },
             "require": {
@@ -123,12 +123,12 @@
                     ]
                 }
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "Apache-2.0"
             ],
             "description": "CultuurNet search service",
-            "time": "2013-05-16 14:57:14"
+            "time": "2013-11-06 13:57:29"
         },
         {
             "name": "guzzle/common",
@@ -136,13 +136,13 @@
             "target-dir": "Guzzle/Common",
             "source": {
                 "type": "git",
-                "url": "git://github.com/guzzle/common.git",
-                "reference": "v3.1.2"
+                "url": "https://github.com/guzzle/common.git",
+                "reference": "b3d8253413b4cbcf6c223b1570eb3646047fd31a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/guzzle/common/archive/v3.1.2.zip",
-                "reference": "v3.1.2",
+                "url": "https://api.github.com/repos/guzzle/common/zipball/b3d8253413b4cbcf6c223b1570eb3646047fd31a",
+                "reference": "b3d8253413b4cbcf6c223b1570eb3646047fd31a",
                 "shasum": ""
             },
             "require": {
@@ -160,7 +160,7 @@
                     "Guzzle\\Common": ""
                 }
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -180,13 +180,13 @@
             "target-dir": "Guzzle/Http",
             "source": {
                 "type": "git",
-                "url": "git://github.com/guzzle/http.git",
-                "reference": "v3.1.2"
+                "url": "https://github.com/guzzle/http.git",
+                "reference": "deaea3aa4e03bae2541117b8fd3d66838f9bc42c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/guzzle/http/archive/v3.1.2.zip",
-                "reference": "v3.1.2",
+                "url": "https://api.github.com/repos/guzzle/http/zipball/deaea3aa4e03bae2541117b8fd3d66838f9bc42c",
+                "reference": "deaea3aa4e03bae2541117b8fd3d66838f9bc42c",
                 "shasum": ""
             },
             "require": {
@@ -209,7 +209,7 @@
                     "Guzzle\\Http": ""
                 }
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -237,13 +237,13 @@
             "target-dir": "Guzzle/Log",
             "source": {
                 "type": "git",
-                "url": "https://github.com/guzzle/log",
-                "reference": "v3.0.7"
+                "url": "https://github.com/guzzle/log.git",
+                "reference": "31da1c019dac8465f5c6e7d4a2ecf7bed986f67f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/guzzle/log/archive/v3.0.7.zip",
-                "reference": "v3.0.7",
+                "url": "https://api.github.com/repos/guzzle/log/zipball/31da1c019dac8465f5c6e7d4a2ecf7bed986f67f",
+                "reference": "31da1c019dac8465f5c6e7d4a2ecf7bed986f67f",
                 "shasum": ""
             },
             "require": {
@@ -263,7 +263,7 @@
                     "Guzzle\\Log": ""
                 }
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -289,13 +289,13 @@
             "target-dir": "Guzzle/Parser",
             "source": {
                 "type": "git",
-                "url": "git://github.com/guzzle/parser.git",
-                "reference": "v3.1.2"
+                "url": "https://github.com/guzzle/parser.git",
+                "reference": "b3145907487c43a5b1ae3070c1daff804e47f86d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/guzzle/parser/archive/v3.1.2.zip",
-                "reference": "v3.1.2",
+                "url": "https://api.github.com/repos/guzzle/parser/zipball/b3145907487c43a5b1ae3070c1daff804e47f86d",
+                "reference": "b3145907487c43a5b1ae3070c1daff804e47f86d",
                 "shasum": ""
             },
             "require": {
@@ -312,7 +312,7 @@
                     "Guzzle\\Parser": ""
                 }
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -333,13 +333,13 @@
             "target-dir": "Guzzle/Plugin/Cookie",
             "source": {
                 "type": "git",
-                "url": "https://github.com/guzzle/plugin-cookie",
-                "reference": "v3.0.7"
+                "url": "https://github.com/guzzle/plugin-cookie.git",
+                "reference": "eb10db730281d58a480c566cc3edc7889b24aef1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/guzzle/plugin-cookie/archive/v3.0.7.zip",
-                "reference": "v3.0.7",
+                "url": "https://api.github.com/repos/guzzle/plugin-cookie/zipball/eb10db730281d58a480c566cc3edc7889b24aef1",
+                "reference": "eb10db730281d58a480c566cc3edc7889b24aef1",
                 "shasum": ""
             },
             "require": {
@@ -357,7 +357,7 @@
                     "Guzzle\\Plugin\\Cookie": ""
                 }
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -382,13 +382,13 @@
             "target-dir": "Guzzle/Plugin/Log",
             "source": {
                 "type": "git",
-                "url": "https://github.com/guzzle/plugin-log",
-                "reference": "v3.1.2"
+                "url": "https://github.com/guzzle/plugin-log.git",
+                "reference": "12166004672f41c1e6d777e7c1b514422eeafa6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/guzzle/plugin-log/archive/v3.1.2.zip",
-                "reference": "v3.1.2",
+                "url": "https://api.github.com/repos/guzzle/plugin-log/zipball/12166004672f41c1e6d777e7c1b514422eeafa6a",
+                "reference": "12166004672f41c1e6d777e7c1b514422eeafa6a",
                 "shasum": ""
             },
             "require": {
@@ -407,7 +407,7 @@
                     "Guzzle\\Plugin\\Log": ""
                 }
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -433,13 +433,13 @@
             "target-dir": "Guzzle/Plugin/Oauth",
             "source": {
                 "type": "git",
-                "url": "https://github.com/guzzle/plugin-oauth",
-                "reference": "v3.0.7"
+                "url": "https://github.com/guzzle/plugin-oauth.git",
+                "reference": "e2b7c6b2153deb7d837618a0e69ff53a3e6bc9d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/guzzle/plugin-oauth/archive/v3.0.7.zip",
-                "reference": "v3.0.7",
+                "url": "https://api.github.com/repos/guzzle/plugin-oauth/zipball/e2b7c6b2153deb7d837618a0e69ff53a3e6bc9d0",
+                "reference": "e2b7c6b2153deb7d837618a0e69ff53a3e6bc9d0",
                 "shasum": ""
             },
             "require": {
@@ -457,7 +457,7 @@
                     "Guzzle\\Plugin\\Oauth": ""
                 }
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -483,13 +483,13 @@
             "target-dir": "Guzzle/Stream",
             "source": {
                 "type": "git",
-                "url": "https://github.com/guzzle/stream",
-                "reference": "v3.0.7"
+                "url": "https://github.com/guzzle/stream.git",
+                "reference": "c499757c760159188a9573362b8086ef25e6734e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/guzzle/stream/archive/v3.0.7.zip",
-                "reference": "v3.0.7",
+                "url": "https://api.github.com/repos/guzzle/stream/zipball/c499757c760159188a9573362b8086ef25e6734e",
+                "reference": "c499757c760159188a9573362b8086ef25e6734e",
                 "shasum": ""
             },
             "require": {
@@ -507,7 +507,7 @@
                     "Guzzle\\Stream": ""
                 }
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -529,30 +529,42 @@
         },
         {
             "name": "justinrainbow/json-schema",
-            "version": "1.1.0",
+            "version": "1.3.3",
             "source": {
                 "type": "git",
-                "url": "git://github.com/justinrainbow/json-schema.git",
-                "reference": "v1.1.0"
+                "url": "https://github.com/justinrainbow/json-schema.git",
+                "reference": "56fe099669ff3ec3be859ec02e3da965a720184d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/justinrainbow/json-schema/archive/v1.1.0.zip",
-                "reference": "v1.1.0",
+                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/56fe099669ff3ec3be859ec02e3da965a720184d",
+                "reference": "56fe099669ff3ec3be859ec02e3da965a720184d",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
             },
+            "require-dev": {
+                "json-schema/json-schema-test-suite": "1.1.0",
+                "phpunit/phpunit": "~3.7.0"
+            },
+            "bin": [
+                "bin/validate-json"
+            ],
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "JsonSchema": "src/"
                 }
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NewBSD"
+                "BSD-3-Clause"
             ],
             "authors": [
                 {
@@ -580,7 +592,48 @@
                 "json",
                 "schema"
             ],
-            "time": "2012-01-03 00:33:17"
+            "time": "2013-07-22 15:15:25"
+        },
+        {
+            "name": "leafo/lessphp",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/leafo/lessphp.git",
+                "reference": "bc4f33b4bfc889018ebe53611050729641b82dc6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/leafo/lessphp/zipball/bc4f33b4bfc889018ebe53611050729641b82dc6",
+                "reference": "bc4f33b4bfc889018ebe53611050729641b82dc6",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.4.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "lessc.inc.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT",
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Leaf Corcoran",
+                    "email": "leafot@gmail.com",
+                    "homepage": "http://leafo.net"
+                }
+            ],
+            "description": "lessphp is a compiler for LESS written in PHP.",
+            "homepage": "http://leafo.net/lessphp/",
+            "time": "2013-10-17 16:23:00"
         },
         {
             "name": "symfony/console",
@@ -589,12 +642,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "d07c6c532c51367920ddc4a08b1b173acc094acf"
+                "reference": "ba3a0f7e18c6942f9f501be218360bffba6a9bdc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/d07c6c532c51367920ddc4a08b1b173acc094acf",
-                "reference": "d07c6c532c51367920ddc4a08b1b173acc094acf",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/ba3a0f7e18c6942f9f501be218360bffba6a9bdc",
+                "reference": "ba3a0f7e18c6942f9f501be218360bffba6a9bdc",
                 "shasum": ""
             },
             "require": {
@@ -611,7 +664,7 @@
                     "Symfony\\Component\\Console\\": ""
                 }
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -627,7 +680,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2013-05-10 18:08:31"
+            "time": "2013-11-08 00:49:34"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -636,19 +689,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/EventDispatcher.git",
-                "reference": "4b34aad44d0a2d91f301ee967151ce0980f39930"
+                "reference": "d51d78b34c1d9dcc384ba48155105fe99284dd67"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/4b34aad44d0a2d91f301ee967151ce0980f39930",
-                "reference": "4b34aad44d0a2d91f301ee967151ce0980f39930",
+                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/d51d78b34c1d9dcc384ba48155105fe99284dd67",
+                "reference": "d51d78b34c1d9dcc384ba48155105fe99284dd67",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
             "require-dev": {
-                "symfony/dependency-injection": ">=2.0,<3.0"
+                "symfony/dependency-injection": "~2.0"
             },
             "suggest": {
                 "symfony/dependency-injection": "",
@@ -665,7 +718,7 @@
                     "Symfony\\Component\\EventDispatcher\\": ""
                 }
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -681,16 +734,25 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "http://symfony.com",
-            "time": "2013-05-16 07:54:39"
+            "time": "2013-10-17 11:48:11"
         }
     ],
-    "packages-dev": null,
+    "packages-dev": [
+
+    ],
     "aliases": [
 
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "cultuurnet/search": 20
-    }
-}
+        "cultuurnet/auth": 20,
+        "cultuurnet/search": 20,
+        "cultuurnet/cdb": 20
+    },
+    "platform": [
 
+    ],
+    "platform-dev": [
+
+    ]
+}
