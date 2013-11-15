@@ -171,7 +171,7 @@ function culturefeed_kickstart_install() {
       'delta' => 'user-activities',
       'theme' => $default_theme,
       'status' => 1,
-      'weight' => -35,
+      'weight' => 5,
       'region' => 'content',
       'pages' => 'user*',
       'visibility' => 1,
