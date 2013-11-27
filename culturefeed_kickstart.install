@@ -262,6 +262,9 @@ function culturefeed_kickstart_install() {
   variable_set('culturefeed_social_report_destin', 1);
   // Set the domain id
   variable_set('agenda_search_block_domain_id', 'eventtype');
+
+  // Configure default permissions for each role
+  db_query("INSERT INTO {role_permission} (rid, permission, module) VALUES (1, 'access content', 'node'), (2, 'access content', 'node')");
   
   // Insert default user-defined node types into the database
   $type = array(
@@ -339,25 +342,6 @@ function culturefeed_kickstart_install() {
   );
   $full_html_format = (object) $full_html_format;
   filter_format_save($full_html_format);
-
-  // Enable default permissions for system roles.
-  $filtered_html_permission = filter_permission_name($filtered_html_format);
-  user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array('access content', 'node', 'access user profiles', $filtered_html_permission, 'access site wide contact form'));
-  user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, array('access content', 'node', 'access user profiles', $filtered_html_permission, 'access site wide contact form'));
-  
-  // Create a default role for site administrators, with all available permissions assigned.
-  $admin_role = new stdClass();
-  $admin_role->name = 'administrator';
-  $admin_role->weight = 2;
-  user_role_save($admin_role);
-  user_role_grant_permissions($admin_role->rid, array_keys(module_invoke_all('permission')));
-  // Set this as the administrator role.
-  variable_set('user_admin_role', $admin_role->rid);
-
-  // Assign user 1 the "administrator" role.
-  db_insert('users_roles')
-    ->fields(array('uid' => 1, 'rid' => $admin_role->rid))
-    ->execute();
 
   // Create a Home link in the main menu.
   $item = array(
