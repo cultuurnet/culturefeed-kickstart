@@ -18,7 +18,7 @@ function culturefeed_kickstart_install() {
   $import->import();
   
   // Enable some modules.
-  module_enable(array('block','menu','contact','contextual','filter,'path'));
+  module_enable(array('block','menu','contact','contextual','filter','path'));
   
   // Enable themes
   theme_enable(array('bootstrap','culturefeed_bootstrap','seven'));
