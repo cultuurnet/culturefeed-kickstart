@@ -1,4 +1,4 @@
-name = CultuureFeed Kickstart
+name = CultureFeed Kickstart
 description = Installation Profile Kickstart with several configured CultureFeed modules.
 core = 7.x
 
