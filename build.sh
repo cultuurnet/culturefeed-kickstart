@@ -54,7 +54,7 @@ printf "require 'vendor/autoload.php';\n" >> ./sites/default/default.settings.ph
 # Work on the 2 branch of cdb.
 cd ${build_dir};
 cd vendor/cultuurnet/cdb
-git checkout -b 2.x remotes/origin/release/2.x
+git pull
 cd ../search
 git pull
 cd ../auth
