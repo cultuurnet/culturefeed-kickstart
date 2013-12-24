@@ -8,9 +8,12 @@ dependencies[] = culturefeed_search
 dependencies[] = culturefeed_search_ui
 dependencies[] = culturefeed_agenda
 dependencies[] = culturefeed_social
+dependencies[] = culturefeed_search_views
 
 dependencies[] = module_filter
 dependencies[] = devel
 dependencies[] = admin_menu_toolbar
 dependencies[] = libraries
 dependencies[] = less
+dependencies[] = views
+dependencies[] = ctools

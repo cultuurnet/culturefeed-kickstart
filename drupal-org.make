@@ -6,6 +6,8 @@ projects[] = module_filter
 projects[] = admin_menu
 projects[] = libraries
 projects[] = less
+projects[] = views
+projects[] = ctools
 projects[bootstrap][version] = 3.0-rc2
 
 projects[culturefeed][type] = module
