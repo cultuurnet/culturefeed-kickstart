@@ -6,8 +6,11 @@ projects[] = module_filter
 projects[] = admin_menu
 projects[] = libraries
 projects[] = less
+projects[] = imce
+projects[] = imce_wysiwyg
 projects[] = views
 projects[] = ctools
+projects[] = wysiwyg
 projects[bootstrap][version] = 3.0-rc2
 
 projects[culturefeed][type] = module
@@ -19,3 +22,6 @@ projects[culturefeed_bootstrap][type] = theme
 projects[culturefeed_bootstrap][download][type] = git
 projects[culturefeed_bootstrap][download][branch] = "master"
 projects[culturefeed_bootstrap][download][url] = https://github.com/cultuurnet/culturefeed_bootstrap.git
+
+libraries[tinymce][download][type] = get
+libraries[tinymce][download][url] = https://github.com/downloads/tinymce/tinymce/tinymce_3.5.8.zip
