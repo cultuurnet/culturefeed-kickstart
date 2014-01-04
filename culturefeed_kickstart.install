@@ -284,7 +284,9 @@ function culturefeed_kickstart_install() {
   // Default page to not be promoted and have comments disabled.
   $theme_settings = variable_get('theme_settings', array());
   $theme_settings['toggle_node_info_page'] = FALSE;
-  variable_set('comment_page', COMMENT_NODE_DISABLED);
+  // Comment module is not enabled, so use the value of COMMENT_NODE_HIDDEN
+  // constant directly.
+  variable_set('comment_page', 0);
   variable_set('theme_settings', $theme_settings);
 
   // Add text formats.
