@@ -20,3 +20,4 @@ dependencies[] = imce_wysiwyg
 dependencies[] = wysiwyg
 dependencies[] = views
 dependencies[] = ctools
+dependencies[] = date

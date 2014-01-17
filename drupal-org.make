@@ -11,7 +11,8 @@ projects[] = imce_wysiwyg
 projects[] = views
 projects[] = ctools
 projects[] = wysiwyg
-projects[bootstrap][version] = 3.0-rc2
+projects[] = date
+projects[bootstrap][version] = 3.0
 
 projects[culturefeed][type] = module
 projects[culturefeed][download][type] = git
