@@ -256,7 +256,7 @@ function culturefeed_kickstart_install() {
     // Region 'navigation' doesn't exist in bartik
     switch ($block['region']) {
       case 'header':
-        $block['region'] = 'featured';
+        $block['region'] = 'content';
         break;
       case 'navigation':
         $block['region'] = 'header';
