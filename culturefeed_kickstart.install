@@ -253,8 +253,11 @@ function culturefeed_kickstart_install() {
     $query->values($block);
     // Add block for bartik
     $block['theme'] = 'bartik';
-    // Region 'navigation' doesn't exist in bartik (switch to add more regions if needed)
+    // Region 'navigation' doesn't exist in bartik
     switch ($block['region']) {
+      case 'header':
+        $block['region'] = 'featured';
+        break;
       case 'navigation':
         $block['region'] = 'header';
         break;
