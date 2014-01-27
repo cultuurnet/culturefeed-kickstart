@@ -249,6 +249,16 @@ function culturefeed_kickstart_install() {
   $query = db_insert('block')->fields(array('module', 'delta', 'theme', 'status', 'weight', 'region', 'pages', 'cache', 'visibility'));
   foreach ($blocks as $block) {
     $block['visibility'] = isset($block['visibility']) ? $block['visibility'] : 0;
+    // Add block for default_theme
+    $query->values($block);
+    // Add block for bartik
+    $block['theme'] = 'bartik';
+    // Region 'navigation' doesn't exist in bartik (switch to add more regions if needed)
+    switch ($block['region']) {
+      case 'navigation':
+        $block['region'] = 'header';
+        break;
+    }
     $query->values($block);
   }
   $query->execute();
