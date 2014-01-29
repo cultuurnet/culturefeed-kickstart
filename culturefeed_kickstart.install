@@ -47,7 +47,7 @@ function culturefeed_kickstart_install() {
       'delta' => 'agenda-search-block',
       'theme' => $default_theme,
       'status' => 1,
-      'weight' => -31,
+      'weight' => -33,
       'region' => 'header',
       'pages' => '',
       'cache' => -1
@@ -238,7 +238,7 @@ function culturefeed_kickstart_install() {
       'delta' => 'my_uitid',
       'theme' => $default_theme,
       'status' => 1,
-      'weight' => -60,
+      'weight' => -32,
       'region' => 'sidebar_second',
       'pages' => "agenda/e*\r\nagenda/p*\r\nagenda/a*\r\nagenda/g*",
       'visibility' => 1,
@@ -256,7 +256,7 @@ function culturefeed_kickstart_install() {
     // Region 'navigation' doesn't exist in bartik
     switch ($block['region']) {
       case 'header':
-        $block['region'] = 'content';
+        $block['region'] = 'sidebar_second';
         break;
       case 'navigation':
         $block['region'] = 'header';
