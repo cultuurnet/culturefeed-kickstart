@@ -1,6 +1,7 @@
 api = 2
 core = 7.x 
 
+projects[] = google_analytics
 projects[] = devel
 projects[] = module_filter
 projects[] = admin_menu
@@ -12,6 +13,9 @@ projects[] = views
 projects[] = ctools
 projects[] = wysiwyg
 projects[] = date
+projects[] = token
+projects[] = pathauto
+projects[] = globalredirect
 projects[bootstrap][version] = 3.0
 
 projects[culturefeed][type] = module

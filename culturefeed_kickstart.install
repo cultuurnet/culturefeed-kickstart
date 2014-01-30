@@ -229,7 +229,7 @@ function culturefeed_kickstart_install() {
       'status' => 1,
       'weight' => -28,
       'region' => 'sidebar_second',
-      'pages' => "culturefeed/profile/*\r\nculturefeed/account/*\r\nculturefeed/activities/*\r\nculturefeed/pages/*\r\nuser/*",
+      'pages' => "culturefeed/profile/*\r\nculturefeed/account/*\r\nculturefeed/activities\r\nculturefeed/pages/*\r\nuser/*",
       'visibility' => 1,
       'cache' => -1
     ),
@@ -278,6 +278,8 @@ function culturefeed_kickstart_install() {
 
   // Configure default permissions for each role
   db_query("INSERT INTO {role_permission} (rid, permission, module) VALUES (1, 'access content', 'node'), (2, 'access content', 'node')");
+  db_query("INSERT INTO {role_permission} (rid, permission, module) VALUES (1, 'access user profiles', 'user'), (2, 'access user profiles', 'user')");
+  db_query("INSERT INTO {role_permission} (rid, permission, module) VALUES (1, 'access site-wide contact form', 'contact'), (2, 'access site-wide contact form', 'contact')");
   
   // Insert default user-defined node types into the database
   $type = array(
@@ -300,6 +302,7 @@ function culturefeed_kickstart_install() {
   // Comment module is not enabled, so use the value of COMMENT_NODE_HIDDEN
   // constant directly.
   variable_set('comment_page', 0);
+  variable_set('node_submitted_page', 0);
   variable_set('theme_settings', $theme_settings);
 
   // Add text formats.
