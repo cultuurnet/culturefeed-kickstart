@@ -78,23 +78,23 @@ function culturefeed_kickstart_install() {
     // Module culturefeed_search_ui
     array(
       'module' => 'culturefeed_search_ui',
+      'delta' => 'culturefeed-search-sortorder',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => -41,
+      'region' => 'content',
+      'pages' => 'agenda/search*',
+      'visibility' => 1,
+      'cache' => -1
+    ),
+    array(
+      'module' => 'culturefeed_search_ui',
       'delta' => 'culturefeed-search-activefilters',
       'theme' => $default_theme,
       'status' => 1,
       'weight' => -39,
       'region' => 'content',
       'pages' => "agenda/search\r\nagenda/pages",
-      'visibility' => 1,
-      'cache' => -1
-    ),
-    array(
-      'module' => 'culturefeed_search_ui',
-      'delta' => 'culturefeed-search-sortorder',
-      'theme' => $default_theme,
-      'status' => 1,
-      'weight' => -37,
-      'region' => 'content',
-      'pages' => 'agenda/search*',
       'visibility' => 1,
       'cache' => -1
     ),
