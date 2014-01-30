@@ -10,6 +10,7 @@ dependencies[] = culturefeed_agenda
 dependencies[] = culturefeed_social
 dependencies[] = culturefeed_search_views
 
+dependencies[] = googleanalytics
 dependencies[] = module_filter
 dependencies[] = devel
 dependencies[] = admin_menu_toolbar
@@ -21,3 +22,6 @@ dependencies[] = wysiwyg
 dependencies[] = views
 dependencies[] = ctools
 dependencies[] = date
+dependencies[] = token
+dependencies[] = pathauto
+dependencies[] = globalredirect
