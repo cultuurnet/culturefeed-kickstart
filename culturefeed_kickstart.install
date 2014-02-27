@@ -94,7 +94,7 @@ function culturefeed_kickstart_install() {
       'status' => 1,
       'weight' => -37,
       'region' => 'content',
-      'pages' => 'agenda/search*',
+      'pages' => 'agenda/search*\r\nagenda/pages*',
       'visibility' => 1,
       'cache' => -1
     ),
