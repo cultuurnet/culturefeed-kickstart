@@ -516,6 +516,7 @@ function culturefeed_kickstart_install() {
   <div class="row">
     <div class="col-md-4 col-sm-6">
       <div class="container">
+        <h2>Congrats!</h2>
         <p class="lead visible-lg">So far, so good! But this is just the beginning. It\'s only getting better :-)</p>
         <p class="visible-md">So far, so good! But this is just the beginning. It\'s only getting better :-)</p>
         <p>' . l('Log in to Culturefeed &rarr;', $base_url . '/culturefeed/oauth/connect', array('attributes' => array('class' => 'btn btn-warning btn-block'), 'html' => TRUE)) . '</p>
