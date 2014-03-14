@@ -532,10 +532,7 @@ function culturefeed_kickstart_install() {
 <div class="row">
   <div class="col-sm-4">
     <div class="thumbnail text-center">
-      <span class="fa-stack fa-5x">
-        <i class="fa fa-circle fa-stack-2x text-muted"></i>
-        <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
-      </span>
+      <span class="fa-stack fa-5x"><i class="fa fa-circle fa-stack-2x text-muted"></i><i class="fa fa-calendar fa-stack-1x fa-inverse"></i></span>
       <div class="caption">
         <h3>Events</h3>
         <p class="text-left">What you want to search &amp; browse the Culturefeed Events library, this is what you need:</p>
@@ -567,10 +564,7 @@ function culturefeed_kickstart_install() {
   </div>
   <div class="col-sm-4">
     <div class="thumbnail text-center">
-      <span class="fa-stack fa-5x">
-        <i class="fa fa-circle fa-stack-2x text-muted"></i>
-        <i class="fa fa-user fa-stack-1x fa-inverse"></i>
-      </span>
+      <span class="fa-stack fa-5x"><i class="fa fa-circle fa-stack-2x text-muted"></i><i class="fa fa-user fa-stack-1x fa-inverse"></i></span>
       <div class="caption">
         <h3>Users</h3>
         <p class="text-left">Extending your agenda with some nice login and social features is just a piece of cake:</p>
@@ -601,11 +595,7 @@ function culturefeed_kickstart_install() {
     </div>  
   </div>
   <div class="col-sm-4">
-    <div class="thumbnail text-center">
-      <span class="fa-stack fa-5x">
-        <i class="fa fa-circle fa-stack-2x text-muted"></i>
-        <i class="fa fa-flag fa-stack-1x fa-inverse"></i>
-      </span>
+    <div class="thumbnail text-center"><span class="fa-stack fa-5x"><i class="fa fa-circle fa-stack-2x text-muted"></i><i class="fa fa-flag fa-stack-1x fa-inverse"></i></span>
       <div class="caption">
         <h3>Theme</h3>
         <p class="text-left">Culturefeed Bootstrap is a responsive, mobile first subtheme of the Bootstrap Framework.</p>
