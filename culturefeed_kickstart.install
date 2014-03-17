@@ -478,6 +478,15 @@ function culturefeed_kickstart_install() {
   );
   menu_link_save($item);
 
+  // Create a Pages link in the main menu.
+  $item = array(
+    'link_title' => st('Pages'),
+    'link_path' => 'agenda/pages',
+    'menu_name' => 'main-menu',
+    'weight' => 12,
+  );
+  menu_link_save($item);
+
   // Create a Contact link in the main menu.
   $item = array(
     'link_title' => st('Contact'),
