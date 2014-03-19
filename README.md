@@ -12,3 +12,13 @@ Prerequisites
 
 To build your site just run 'sh build.sh' in the root of the culturefeed-kickstart project. 
 
+On new servers make sure unzip is installed (for drush make) and gd, curl and mod_rewrite  (for drupal)
+- sudo apt-get install unzip
+- sudo apt-get install php5-gd
+- sudo apt-get install php5-curl
+- sudo a2enmod rewrite
+
+
+To make correct OAuth requests make sure date (date) and timezone is correct
+- sudo dpkg-reconfigure tzdata
+
