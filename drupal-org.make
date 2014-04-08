@@ -11,6 +11,7 @@ projects[] = imce_wysiwyg
 projects[] = views
 projects[] = ctools
 projects[] = wysiwyg
+projects[] = jquery_update
 projects[bootstrap][version] = 3.0-rc2
 
 projects[culturefeed][type] = module
