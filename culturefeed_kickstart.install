@@ -269,6 +269,9 @@ function culturefeed_kickstart_install() {
   // Set drupal variables
   variable_set('menu_secondary_links_source', '');
   
+  // Set jquery_update variables
+  variable_set('jquery_update_jquery_version', '1.8');
+  
   // Set additional culturefeed variables
   // Use default pager (not infinite scroll)
   variable_set('culturefeed_search_ui_pager_type', 0);
@@ -491,6 +494,15 @@ function culturefeed_kickstart_install() {
     'link_path' => 'agenda/search',
     'menu_name' => 'main-menu',
     'weight' => 10,
+  );
+  menu_link_save($item);
+
+  // Create a Pages link in the main menu.
+  $item = array(
+    'link_title' => st('Pages'),
+    'link_path' => 'agenda/pages',
+    'menu_name' => 'main-menu',
+    'weight' => 12,
   );
   menu_link_save($item);
 

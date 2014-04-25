@@ -25,3 +25,4 @@ dependencies[] = date
 dependencies[] = token
 dependencies[] = pathauto
 dependencies[] = globalredirect
+dependencies[] = jquery_update
