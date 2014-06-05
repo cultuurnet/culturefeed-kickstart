@@ -1,9 +1,13 @@
 {
   "require": {
     "cultuurnet/auth": "1.0.*@dev",
-    "cultuurnet/search": "1.0.*@dev",
+    "cultuurnet/search": "dev-feature/MSS-7 as 1.x-dev",
     "cultuurnet/cdb": "2.x@dev",
-    "leafo/lessphp": ">=0.3.7"
+    "leafo/lessphp": ">=0.3.7",
+    "monolog/monolog": "1.7.0",
+    "symfony/event-dispatcher": "2.3.*",
+    "guzzle/http": "3.1.*",
+    "guzzle/plugin-log": "3.1.*"
   },
   "minimum-stability": "dev"
 }
