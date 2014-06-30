@@ -17,7 +17,7 @@ projects[] = token
 projects[] = pathauto
 projects[] = globalredirect
 projects[] = jquery_update
-projects[bootstrap][version] = 3.0-rc2
+projects[bootstrap][version] = 3.0
 
 projects[culturefeed][type] = module
 projects[culturefeed][download][type] = git
@@ -26,7 +26,7 @@ projects[culturefeed][download][url] = https://github.com/cultuurnet/culturefeed
 
 projects[culturefeed_bootstrap][type] = theme
 projects[culturefeed_bootstrap][download][type] = git
-projects[culturefeed_bootstrap][download][branch] = "develop"
+projects[culturefeed_bootstrap][download][branch] = "feature/MSS-18"
 projects[culturefeed_bootstrap][download][url] = https://github.com/cultuurnet/culturefeed_bootstrap.git
 
 libraries[tinymce][download][type] = get
