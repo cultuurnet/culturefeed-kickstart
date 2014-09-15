@@ -306,14 +306,23 @@ function culturefeed_kickstart_install() {
   variable_set('jquery_update_jquery_version', '1.8');
   
   // Set additional culturefeed variables
-  // Use default pager (not infinite scroll)
-  variable_set('culturefeed_search_ui_pager_type', 0);
-  variable_set('culturefeed_social_report_destin', 1);
-  // Set the domain id
-  variable_set('agenda_search_block_domain_id', 'eventtype');
-  
-  // Show themes facet only when types selected
-  variable_set('culturefeed_facet_theme_hide', TRUE);
+
+    // Use default pager (not infinite scroll)
+    variable_set('culturefeed_search_ui_pager_type', 0);
+    variable_set('culturefeed_social_report_destin', 1);
+
+    // Set the domain id
+    variable_set('agenda_search_block_domain_id', 'eventtype');
+    
+    // Show themes facet only when types selected
+    variable_set('culturefeed_facet_theme_hide', TRUE);
+    
+    // Set defaults for related-activities block
+    variable_set('agenda_related_activities_context', 'eventtype');
+    variable_set('agenda_related_activities_range', '30');
+    variable_set('agenda_related_activities_sort', 'recommend_count');
+    variable_set('agenda_related_activities_sort_direction', 'desc');
+    variable_set('agenda_related_activities_total_items', '4');    
 
   // Configure default permissions for each role
   db_query("INSERT INTO {role_permission} (rid, permission, module) VALUES (1, 'access content', 'node'), (2, 'access content', 'node')");
