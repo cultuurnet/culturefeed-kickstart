@@ -199,7 +199,7 @@ function culturefeed_kickstart_install() {
       'status' => 1,
       'weight' => 0,
       'region' => 'sidebar_second',
-      'pages' => '<front>',
+      'pages' => "agenda/e/*\r\nagenda/p/*\r\nagenda/a/*",
       'visibility' => 1,
       'cache' => -1,
       'title' => ''
