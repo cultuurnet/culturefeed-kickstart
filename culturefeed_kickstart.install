@@ -67,18 +67,6 @@ function culturefeed_kickstart_install() {
       'cache' => -1,
       'title' => ''
     ),
-    array(
-      'module' => 'culturefeed_agenda',
-      'delta' => 'production-program',
-      'theme' => $default_theme,
-      'status' => 1,
-      'weight' => 10,
-      'region' => 'content',
-      'pages' => 'agenda/p/*',
-      'visibility' => 1,
-      'cache' => -1,
-      'title' => ''
-    ),
     
     // Module culturefeed_search_ui
     array(
