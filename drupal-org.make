@@ -17,6 +17,7 @@ projects[] = token
 projects[] = pathauto
 projects[] = globalredirect
 projects[] = jquery_update
+projects[] = redirect
 projects[bootstrap][version] = 3.0
 
 projects[culturefeed][type] = module
