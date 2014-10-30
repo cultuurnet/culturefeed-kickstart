@@ -1,6 +1,6 @@
 {
   "require": {
-    "cultuurnet/culturefeed-php": "~1.0",
+    "cultuurnet/culturefeed-php": "dev-feature/MSS-67 as 1.0.0",
     "cultuurnet/auth": "~1.0",
     "cultuurnet/search": "~1.0",
     "cultuurnet/cdb": "~2.0",
