@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cultuurnet/Auth.git",
-                "reference": "4369e59f01fb7e3b6e88538e7c17851afd50e5cf"
+                "reference": "3b7f743d1e53927ca7e17b1168062bd4384dbe48"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cultuurnet/Auth/zipball/4369e59f01fb7e3b6e88538e7c17851afd50e5cf",
-                "reference": "4369e59f01fb7e3b6e88538e7c17851afd50e5cf",
+                "url": "https://api.github.com/repos/cultuurnet/Auth/zipball/3b7f743d1e53927ca7e17b1168062bd4384dbe48",
+                "reference": "3b7f743d1e53927ca7e17b1168062bd4384dbe48",
                 "shasum": ""
             },
             "require": {
@@ -51,20 +51,20 @@
                 "Apache-2.0"
             ],
             "description": "Authentication service for CultuurNet web services",
-            "time": "2014-10-28 13:01:49"
+            "time": "2014-10-22 07:15:46"
         },
         {
             "name": "cultuurnet/cdb",
-            "version": "2.0.x-dev",
+            "version": "dev-release/2.x",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cultuurnet/Cdb.git",
-                "reference": "b754654957241848a9957bafd3502e74e8f9724e"
+                "reference": "e547c9e6937f7ae77f1abd94d8f996839c682101"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cultuurnet/Cdb/zipball/b754654957241848a9957bafd3502e74e8f9724e",
-                "reference": "b754654957241848a9957bafd3502e74e8f9724e",
+                "url": "https://api.github.com/repos/cultuurnet/Cdb/zipball/e547c9e6937f7ae77f1abd94d8f996839c682101",
+                "reference": "e547c9e6937f7ae77f1abd94d8f996839c682101",
                 "shasum": ""
             },
             "type": "library",
@@ -148,7 +148,7 @@
                 }
             ],
             "description": "Culturefeed PHP library",
-            "time": "2015-01-16 09:42:45"
+            "time": "2014-10-23 15:01:51"
         },
         {
             "name": "cultuurnet/search",
@@ -668,20 +668,14 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/leafo/lessphp.git",
-                "reference": "e701984d5d488599441623d3d56bd42103019ab6"
+                "reference": "011afcca8e6f1000a6e789921ba805fa578271a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/leafo/lessphp/zipball/e701984d5d488599441623d3d56bd42103019ab6",
-                "reference": "e701984d5d488599441623d3d56bd42103019ab6",
+                "url": "https://api.github.com/repos/leafo/lessphp/zipball/011afcca8e6f1000a6e789921ba805fa578271a3",
+                "reference": "011afcca8e6f1000a6e789921ba805fa578271a3",
                 "shasum": ""
             },
-            "require-dev": {
-                "phpunit/phpunit": "~4.3"
-            },
-            "bin": [
-                "plessc"
-            ],
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -707,30 +701,30 @@
             ],
             "description": "lessphp is a compiler for LESS written in PHP.",
             "homepage": "http://leafo.net/lessphp/",
-            "time": "2014-12-29 20:45:53"
+            "time": "2014-04-27 02:56:30"
         },
         {
             "name": "symfony/console",
-            "version": "2.7.x-dev",
+            "version": "dev-master",
             "target-dir": "Symfony/Component/Console",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "0a5b1f308284c5d1686e03af36ba583d2a5db632"
+                "reference": "771649efa94246e63a6ab2726ba908a358bdd403"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/0a5b1f308284c5d1686e03af36ba583d2a5db632",
-                "reference": "0a5b1f308284c5d1686e03af36ba583d2a5db632",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/771649efa94246e63a6ab2726ba908a358bdd403",
+                "reference": "771649efa94246e63a6ab2726ba908a358bdd403",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.9"
+                "php": ">=5.3.3"
             },
             "require-dev": {
                 "psr/log": "~1.0",
-                "symfony/event-dispatcher": "~2.1|~3.0.0",
-                "symfony/process": "~2.1|~3.0.0"
+                "symfony/event-dispatcher": "~2.1",
+                "symfony/process": "~2.1"
             },
             "suggest": {
                 "psr/log": "For using the console logger",
@@ -740,7 +734,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.7-dev"
+                    "dev-master": "2.6-dev"
                 }
             },
             "autoload": {
@@ -764,7 +758,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2015-01-13 07:22:42"
+            "time": "2014-10-05 13:59:22"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -773,23 +767,23 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/EventDispatcher.git",
-                "reference": "aa7baadd807ae1dae680bf5b0bf48fbc8d51dfaf"
+                "reference": "e133748fd9165e24f8e9498ef5862f8bd37004e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/aa7baadd807ae1dae680bf5b0bf48fbc8d51dfaf",
-                "reference": "aa7baadd807ae1dae680bf5b0bf48fbc8d51dfaf",
+                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/e133748fd9165e24f8e9498ef5862f8bd37004e5",
+                "reference": "e133748fd9165e24f8e9498ef5862f8bd37004e5",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.9"
+                "php": ">=5.3.3"
             },
             "require-dev": {
                 "psr/log": "~1.0",
-                "symfony/config": "~2.7|~3.0",
-                "symfony/dependency-injection": "~2.7|~3.0",
-                "symfony/expression-language": "~2.7|~3.0",
-                "symfony/stopwatch": "~2.7|~3.0"
+                "symfony/config": "~2.0",
+                "symfony/dependency-injection": "~2.6",
+                "symfony/expression-language": "~2.6",
+                "symfony/stopwatch": "~2.2"
             },
             "suggest": {
                 "symfony/dependency-injection": "",
@@ -798,7 +792,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "2.6-dev"
                 }
             },
             "autoload": {
@@ -822,15 +816,13 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "http://symfony.com",
-            "time": "2015-01-16 10:22:15"
+            "time": "2014-10-04 06:08:58"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "cultuurnet/culturefeed-php": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "platform": [],
     "platform-dev": []
