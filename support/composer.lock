@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "37195b8b54728aaa9f26719a5869e5d6",
+    "hash": "b7981dc0623fc6b3fe716bafd25c5398",
     "packages": [
         {
             "name": "cultuurnet/auth",
@@ -831,8 +831,8 @@
     "packages-dev": [],
     "aliases": [
         {
-            "alias": "1.x-dev",
-            "alias_normalized": "1.9999999.9999999.9999999-dev",
+            "alias": "1.1",
+            "alias_normalized": "1.1.0.0",
             "version": "dev-feature/CF-370",
             "package": "cultuurnet/culturefeed-php"
         }
