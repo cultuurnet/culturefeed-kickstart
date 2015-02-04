@@ -19,6 +19,7 @@ projects[] = globalredirect
 projects[] = jquery_update
 projects[] = redirect
 projects[bootstrap][version] = 3.0
+projects[less][version] = 3.0
 
 projects[culturefeed][type] = module
 projects[culturefeed][download][type] = git
