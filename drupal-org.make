@@ -6,7 +6,6 @@ projects[] = devel
 projects[] = module_filter
 projects[] = admin_menu
 projects[] = libraries
-projects[] = less
 projects[] = imce
 projects[] = imce_wysiwyg
 projects[] = views
