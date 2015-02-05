@@ -346,7 +346,7 @@ function culturefeed_kickstart_install() {
     
     // Set custom filter form to checkboxes with AND relation
     variabele_set('culturefeed_search_filter_display_options', 'checkboxes');
-    variabele_set('culturefeed-search-filter-operator', 'and');
+    variabele_set('culturefeed_search_filter_operator', 'and');
     
     // Set defaults for related-activities block
     variable_set('agenda_related_activities_context', 'eventtype');
