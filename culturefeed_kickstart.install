@@ -574,19 +574,19 @@ function culturefeed_kickstart_install() {
             <tr>
               <td>
               <a data-toggle="collapse" data-parent="#cf-events" href="#cf-events-one" class="bootstrap-collapse-processed"><strong><i class="fa fa-arrow-right"></i> API Key/Secret</strong></a>
-              <p class="text-muted collapse" id="cf-events-one"><small>This installation comes with a development key &amp; secret. When going live you should <a href="#">apply for a dedicated key</a> for your project. This key will be configured to show only the events that are relevant for your project. Fill out this credentials on the ' . l('Culturefeed Search', $base_url . '/admin/config/culturefeed/search') . ' settings page.</small></p>
+              <p class="text-muted collapse" id="cf-events-one"><small>This installation comes with a development key &amp; secret. When going live you should <a href="http://tools.uitdatabank.be/authenticated?destination=<front>">apply for a dedicated key</a> for your project. This key will be configured to show only the events that are relevant for your project. Fill out this credentials on the ' . l('Culturefeed Search', $base_url . '/admin/config/culturefeed/search') . ' settings page.</small></p>
               </td>
             </tr>
             <tr>
               <td>
               <a data-toggle="collapse" data-parent="#cf-events" href="#cf-events-two" class="bootstrap-collapse-processed"><strong><i class="fa fa-arrow-right"></i> Modules &amp; Blocks</strong></a>
-              <p class="text-muted collapse" id="cf-events-two"><small>The ' . l('Culturefeed Search UI', $base_url . '/admin/config/culturefeed/search_ui') . ' and ' . l('Culturefeed Agenda', $base_url . '/admin/config/culturefeed/agenda') . ' submodules are by default enabled in this installation together with the most common blocks. Explore some more blocks for this submodules on the <a href="/admin/structure/block">blocks configuration</a> page.</small></p>
+              <p class="text-muted collapse" id="cf-events-two"><small>The ' . l('Culturefeed Search UI', $base_url . '/admin/config/culturefeed/search_ui') . ' and ' . l('Culturefeed Agenda', $base_url . '/admin/config/culturefeed/agenda') . ' submodules are by default enabled in this installation together with the most common blocks. Explore some more blocks for this submodules on the <a href="/admin/structure/block">blocks configuration</a> page or on the <a href="https://github.com/cultuurnet/culturefeed/wiki/Module-overview">Culturefeed Wiki</a></small></p>
               </td>
             </tr>
             <tr>
               <td>
               <a data-toggle="collapse" data-parent="#cf-events" href="#cf-events-three" class="bootstrap-collapse-processed"><strong><i class="fa fa-arrow-right"></i> Documentation</strong></a>
-              <p class="text-muted collapse" id="cf-events-three"><small>The Culturefeed Events Search API is build on Solr. The possibilities for building search and filterqueries are numerous. <a href="#">Here\'s an overview</a> of all features.</small></p>
+              <p class="text-muted collapse" id="cf-events-three"><small>The Culturefeed Events Search API is build on Solr. The possibilities for building search and filterqueries are numerous. <a href="http://tools.uitdatabank.be/docs/uitdatabank-search-api-v2-documentatie">Here\'s an overview</a> of all features.</small></p>
               </td>
             </tr>
           </tbody>
@@ -606,7 +606,7 @@ function culturefeed_kickstart_install() {
             <tr>
               <td>
               <a data-toggle="collapse" data-parent="#cf-users" href="#cf-users-one" class="bootstrap-collapse-processed"><strong><i class="fa fa-arrow-right"></i> Users API</strong></a>
-              <p class="text-muted collapse" id="cf-users-one"><small>When you already have a key/secret for the Events API, you can use the same for the Users API. It\'s easy as that. Otherwise you should <a href="#">apply for a key</a> and update your credentials on the ' . l('Culturefeed API', $base_url . '/admin/config/culturefeed/api-settings') . ' settings page.<br><br>Good to know: our user authentication platform is also known as "UiTiD"</small></p>
+              <p class="text-muted collapse" id="cf-users-one"><small>When you already have a key/secret for the Events API, you can use the same for the Users API. It\'s easy as that. Otherwise you should <a href="http://tools.uitdatabank.be/authenticated?destination=<front>">apply for a key</a> and update your credentials on the ' . l('Culturefeed API', $base_url . '/admin/config/culturefeed/api-settings') . ' settings page.<br><br>Good to know: our user authentication platform is also known as "UiTiD"</small></p>
               </td>
             </tr>
             <tr>
@@ -618,7 +618,7 @@ function culturefeed_kickstart_install() {
             <tr>
               <td>
               <a data-toggle="collapse" data-parent="#cf-users" href="#cf-users-three" class="bootstrap-collapse-processed"><strong><i class="fa fa-arrow-right"></i> Going full option</strong></a>
-              <p class="text-muted collapse" id="cf-users-three"><small>Go completely out of control and the enable Culturefeed Pages, Culturefeed Messages or Culturefeed Notifications modules. Attention: these features are still in alpha release and currently not supported in the Culturefeed Bootstrap theme. <br><br>If you want to extend some functionalities or build your own modules, you will need the <a href="http://tools.uitdatabank.be/docs/functionaliteiten">UiTiD API documentation</a> (only in dutch).</small></p>
+              <p class="text-muted collapse" id="cf-users-three"><small>For some specific purposes you might want to enable Culturefeed Search Views, Culturefeed Entry UI, Culturefeed Saved Searches, Culturefeed Calendar, Culturefeed Pages or the Culturefeed Messages  modules. Attention: these features are still in beta and not fully supported in the Culturefeed Bootstrap theme. <br><br>If you want to extend some functionalities or build your own modules, you will need the <a href="http://tools.uitdatabank.be/docs/functionaliteiten">UiTiD API documentation</a> (only in dutch).</small></p>
               </td>
             </tr>
           </tbody>
@@ -648,8 +648,8 @@ function culturefeed_kickstart_install() {
             </tr>
             <tr>
               <td>
-              <a data-toggle="collapse" data-parent="#cf-theme" href="#cf-theme-three" class="bootstrap-collapse-processed"><strong><i class="fa fa-arrow-right"></i> Font Awesome 4.0.3</strong></a>
-              <p class="text-muted collapse" id="cf-theme-three"><small>We chose to make use of the Font Awesome Icon library (version 4.0.3) instead of the Glyphicons that are built in with Bootstrap. <a href="http://fortawesome.github.io/Font-Awesome/">Here\'s an overview</a> of all icons and examples.</small></p>
+              <a data-toggle="collapse" data-parent="#cf-theme" href="#cf-theme-three" class="bootstrap-collapse-processed"><strong><i class="fa fa-arrow-right"></i> Font Awesome 4.2.0</strong></a>
+              <p class="text-muted collapse" id="cf-theme-three"><small>We chose to make use of the Font Awesome Icon library (version 4.2.0) instead of the Glyphicons that are built in with Bootstrap. <a href="http://fortawesome.github.io/Font-Awesome/">Here\'s an overview</a> of all icons and examples.</small></p>
               </td>
             </tr>
           </tbody>
