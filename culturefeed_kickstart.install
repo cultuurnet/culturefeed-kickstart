@@ -115,7 +115,7 @@ function culturefeed_kickstart_install() {
       'pages' => "agenda/search\r\nagenda/pages",
       'visibility' => 1,
       'cache' => -1,
-      'title' => 'Where'
+      'title' => ''
     ),
     array(
       'module' => 'culturefeed_search_ui',
@@ -165,21 +165,21 @@ function culturefeed_kickstart_install() {
       'cache' => -1,
       'title' => ''
     ),
+    array(
+      'module' => 'culturefeed_search_ui',
+      'delta' => 'filter-form',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => -32,
+      'region' => 'sidebar_first',
+      'pages' => 'agenda/search',
+      'visibility' => 1,
+      'cache' => -1,
+      'title' => 'Extra filters'
+    ),
 
     
     // Module culturefeed_social
-    array(
-      'module' => 'culturefeed_social',
-      'delta' => 'recent-activities',
-      'theme' => $default_theme,
-      'status' => 1,
-      'weight' => 0,
-      'region' => 'sidebar_second',
-      'pages' => "agenda/e/*\r\nagenda/p/*\r\nagenda/a/*",
-      'visibility' => 1,
-      'cache' => -1,
-      'title' => ''
-    ),
     array(
       'module' => 'culturefeed_social',
       'delta' => 'user-activities',
@@ -194,10 +194,22 @@ function culturefeed_kickstart_install() {
     ),
     array(
       'module' => 'culturefeed_social',
-      'delta' => 'recommended-by',
+      'delta' => 'liked-by',
       'theme' => $default_theme,
       'status' => 1,
       'weight' => -31,
+      'region' => 'sidebar_second',
+      'pages' => "agenda/e/*\r\nagenda/p/*",
+      'visibility' => 1,
+      'cache' => -1,
+      'title' => ''
+    ),
+    array(
+      'module' => 'culturefeed_social',
+      'delta' => 'attended-by',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => -30,
       'region' => 'sidebar_second',
       'pages' => "agenda/e/*\r\nagenda/p/*",
       'visibility' => 1,
@@ -247,9 +259,44 @@ function culturefeed_kickstart_install() {
       'theme' => $default_theme,
       'status' => 1,
       'weight' => -28,
-      'region' => 'sidebar_second',
+      'region' => 'sidebar_first',
       'pages' => "culturefeed/profile/*\r\nculturefeed/account/*\r\nculturefeed/activities\r\nculturefeed/pages/*\r\nuser/*",
       'visibility' => 1,
+      'cache' => -1,
+      'title' => '<none>'
+    ),
+
+    // Module culturefeed_saved_searches
+    array(
+      'module' => 'culturefeed_saved_searches',
+      'delta' => 'saved-searches-teaser-list',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => -29,
+      'region' => 'header',
+      'pages' => '',
+      'cache' => -1,
+      'title' => ''
+    ),
+    array(
+      'module' => 'culturefeed_saved_searches',
+      'delta' => 'culturefeed-saved-searches-cta-2',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => -38,
+      'region' => 'content',
+      'pages' => 'agenda/search',
+      'cache' => -1,
+      'title' => ''
+    ),
+    array(
+      'module' => 'culturefeed_saved_searches',
+      'delta' => 'culturefeed-saved-searches-cta',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => 0,
+      'region' => 'content',
+      'pages' => 'agenda/search',
       'cache' => -1,
       'title' => ''
     ),
@@ -285,18 +332,26 @@ function culturefeed_kickstart_install() {
 
     // Use default pager (not infinite scroll)
     variable_set('culturefeed_search_ui_pager_type', 0);
+    variable_set('culturefeed_search_ui_pager_items_per_page', 25);
     variable_set('culturefeed_social_report_destin', 1);
 
     // Set the domain id
     variable_set('agenda_search_block_domain_id', 'eventtype');
     
+    // Set highest level of eventtype facet to level 2
+    variable_set('culturefeed_facet_highest_level_facet-eventtype', '2');
+    
     // Show themes facet only when types selected
     variable_set('culturefeed_facet_theme_hide', TRUE);
+    
+    // Set custom filter form to checkboxes with AND relation
+    variabele_set('culturefeed_search_filter_display_options', 'checkboxes');
+    variabele_set('culturefeed-search-filter-operator', 'and');
     
     // Set defaults for related-activities block
     variable_set('agenda_related_activities_context', 'eventtype');
     variable_set('agenda_related_activities_range', '30');
-    variable_set('agenda_related_activities_sort', 'recommend_count');
+    variable_set('agenda_related_activities_sort', 'like_count');
     variable_set('agenda_related_activities_sort_direction', 'desc');
     variable_set('agenda_related_activities_total_items', '4');    
 
