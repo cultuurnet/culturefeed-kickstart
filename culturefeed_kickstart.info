@@ -12,7 +12,6 @@ dependencies[] = culturefeed_search_views
 
 dependencies[] = googleanalytics
 dependencies[] = module_filter
-dependencies[] = devel
 dependencies[] = image
 dependencies[] = admin_menu_toolbar
 dependencies[] = libraries
