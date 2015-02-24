@@ -1,6 +1,6 @@
 {
   "require": {
-    "cultuurnet/culturefeed-php": "~1.0",
+    "cultuurnet/culturefeed-php": "dev-feature/CF-381 as 1.2", 
     "cultuurnet/auth": "~1.0",
     "cultuurnet/search": "~1.0",
     "cultuurnet/cdb": "~2.0",
