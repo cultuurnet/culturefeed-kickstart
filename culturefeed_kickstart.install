@@ -115,7 +115,7 @@ function culturefeed_kickstart_install() {
       'pages' => "agenda/search\r\nagenda/pages",
       'visibility' => 1,
       'cache' => -1,
-      'title' => ''
+      'title' => 'Where'
     ),
     array(
       'module' => 'culturefeed_search_ui',
@@ -194,7 +194,7 @@ function culturefeed_kickstart_install() {
     ),
     array(
       'module' => 'culturefeed_social',
-      'delta' => 'liked-by',
+      'delta' => 'recommended-by',
       'theme' => $default_theme,
       'status' => 1,
       'weight' => -31,
@@ -247,8 +247,8 @@ function culturefeed_kickstart_install() {
       'theme' => $default_theme,
       'status' => 1,
       'weight' => -28,
-      'region' => 'sidebar_first',
-      'pages' => "culturefeed/profile/*\r\nculturefeed/account/*\r\nculturefeed/activities\r\nculturefeed/pages/*\r\nuser/*",
+      'region' => 'sidebar_second',
+      'pages' => "culturefeed/*\r\nuser/*",
       'visibility' => 1,
       'cache' => -1,
       'title' => '<none>'
@@ -271,9 +271,10 @@ function culturefeed_kickstart_install() {
       'delta' => 'culturefeed-saved-searches-cta-2',
       'theme' => $default_theme,
       'status' => 1,
-      'weight' => -38,
+      'weight' => -1,
       'region' => 'content',
-      'pages' => 'agenda/search',
+      'pages' => "agenda/search",
+      'visibility' => 1,
       'cache' => -1,
       'title' => ''
     ),
@@ -282,9 +283,10 @@ function culturefeed_kickstart_install() {
       'delta' => 'culturefeed-saved-searches-cta',
       'theme' => $default_theme,
       'status' => 1,
-      'weight' => 0,
+      'weight' => 20,
       'region' => 'content',
-      'pages' => 'agenda/search',
+      'pages' => "agenda/search",
+      'visibility' => 1,
       'cache' => -1,
       'title' => ''
     ),
