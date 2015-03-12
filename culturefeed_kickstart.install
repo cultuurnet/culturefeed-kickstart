@@ -691,7 +691,6 @@ function culturefeed_kickstart_install() {
   menu_rebuild();
   
   // Create a node with default homepage (with documentation)
-  global $base_url;
   $node = new stdClass();
   $node->title = 'Congrats!';
   $node->type = 'page';
@@ -725,13 +724,13 @@ function culturefeed_kickstart_install() {
             <tr>
               <td>
               <a data-toggle="collapse" data-parent="#cf-events" href="#cf-events-one" class="bootstrap-collapse-processed"><strong><i class="fa fa-arrow-right"></i> API Key/Secret</strong></a>
-              <p class="text-muted collapse" id="cf-events-one"><small>This installation comes with a development key &amp; secret. When going live you should <a href="http://tools.uitdatabank.be/authenticated?destination=<front>">apply for a dedicated key</a> for your project. This key will be configured to show only the events that are relevant for your project. Fill out this credentials on the ' . l('Culturefeed Search', $base_url . '/admin/config/culturefeed/search') . ' settings page.</small></p>
+              <p class="text-muted collapse" id="cf-events-one"><small>This installation comes with a development key &amp; secret. When going live you should <a href="http://tools.uitdatabank.be/authenticated?destination=<front>">apply for a dedicated key</a> for your project. This key will be configured to show only the events that are relevant for your project. Fill out this credentials on the <a href="/admin/config/culturefeed/search">Culturefeed Search settings page</a>.</small></p>
               </td>
             </tr>
             <tr>
               <td>
               <a data-toggle="collapse" data-parent="#cf-events" href="#cf-events-two" class="bootstrap-collapse-processed"><strong><i class="fa fa-arrow-right"></i> Modules &amp; Blocks</strong></a>
-              <p class="text-muted collapse" id="cf-events-two"><small>The ' . l('Culturefeed Search UI', $base_url . '/admin/config/culturefeed/search_ui') . ' and ' . l('Culturefeed Agenda', $base_url . '/admin/config/culturefeed/agenda') . ' submodules are by default enabled in this installation together with the most common blocks. Explore some more blocks for this submodules on the <a href="/admin/structure/block">blocks configuration</a> page or on the <a href="https://github.com/cultuurnet/culturefeed/wiki/Module-overview">Culturefeed Wiki</a></small></p>
+              <p class="text-muted collapse" id="cf-events-two"><small>The <a href="/admin/config/culturefeed/search_ui">Culturefeed Search UI</a> and <a href="/admin/config/culturefeed/agenda">Culturefeed Agenda</a> submodules are by default enabled in this installation together with the most common blocks. Explore some more blocks for this submodules on the <a href="/admin/structure/block">blocks configuration</a> page or on the <a href="https://github.com/cultuurnet/culturefeed/wiki/Module-overview">Culturefeed Wiki</a></small></p>
               </td>
             </tr>
             <tr>
@@ -742,7 +741,7 @@ function culturefeed_kickstart_install() {
             </tr>
           </tbody>
         </table>
-        <p>' . l('Browse Events &rarr;', $base_url . '/agenda/search', array('attributes' => array('class' => 'btn btn-primary btn-block', 'role' => 'button'), 'html' => TRUE)) . '</p>
+        <p><a href="/agenda/search" class="btn btn-primary btn-block">Browse Events &rarr;</a></p>
       </div>
     </div>  
   </div>
@@ -757,13 +756,13 @@ function culturefeed_kickstart_install() {
             <tr>
               <td>
               <a data-toggle="collapse" data-parent="#cf-users" href="#cf-users-one" class="bootstrap-collapse-processed"><strong><i class="fa fa-arrow-right"></i> Users API</strong></a>
-              <p class="text-muted collapse" id="cf-users-one"><small>When you already have a key/secret for the Events API, you can use the same for the Users API. It\'s easy as that. Otherwise you should <a href="http://tools.uitdatabank.be/authenticated?destination=<front>">apply for a key</a> and update your credentials on the ' . l('Culturefeed API', $base_url . '/admin/config/culturefeed/api-settings') . ' settings page.<br><br>Good to know: our user authentication platform is also known as "UiTiD"</small></p>
+              <p class="text-muted collapse" id="cf-users-one"><small>When you already have a key/secret for the Events API, you can use the same for the Users API. It\'s easy as that. Otherwise you should <a href="http://tools.uitdatabank.be/authenticated?destination=<front>">apply for a key</a> and update your credentials on the  <a href="/admin/config/culturefeed/api-settings">Culturefeed API</a> settings page.<br><br>Good to know: our user authentication platform is also known as "UiTiD"</small></p>
               </td>
             </tr>
             <tr>
               <td>
               <a data-toggle="collapse" data-parent="#cf-users" href="#cf-users-two" class="bootstrap-collapse-processed"><strong><i class="fa fa-arrow-right"></i> Modules &amp; Blocks</strong></a>
-              <p class="text-muted collapse" id="cf-users-two"><small>The ' . l('Culturefeed UI', $base_url . '/admin/config/culturefeed/culturefeed_ui') . ' and ' . l('Culturefeed Social', $base_url . '/admin/config/culturefeed/social') . ' submodules are by default enabled in this installation together with the most common blocks. Discover all available ' . l('blocks', $base_url . '/admin/structure/block') . ' and ' . l('settings', $base_url . '/admin/config/culturefeed') . ' for this submodules.</small></p>
+              <p class="text-muted collapse" id="cf-users-two"><small>The <a href="/admin/config/culturefeed/culturefeed_ui">Culturefeed UI</a> and <a href="/admin/config/culturefeed/social">Culturefeed Social</a>  submodules are by default enabled in this installation together with the most common blocks. Discover all available <a href="/admin/structure/block">blocks</a> and <a href="/admin/config/culturefeed">settings</a> for this submodules.</small></p>
               </td>
             </tr>
             <tr>
@@ -774,7 +773,7 @@ function culturefeed_kickstart_install() {
             </tr>
           </tbody>
         </table>
-        <p>' . l('Edit your profile &rarr;', $base_url . '/authenticated', array('attributes' => array('class' => 'btn btn-primary btn-block', 'role' => 'button'), 'html' => TRUE, 'query' => array('destination' => $base_url . '/culturefeed/profile/edit'))) . '</p>
+        <p><a href="/authenticated?destination=culturefeed/profile/edit" class="btn btn-primary btn-block">Edit your profile &rarr;</a></p>
       </div>
     </div>  
   </div>
@@ -788,7 +787,7 @@ function culturefeed_kickstart_install() {
             <tr>
               <td>
               <a data-toggle="collapse" data-parent="#cf-theme" href="#cf-theme-one" class="bootstrap-collapse-processed"><strong><i class="fa fa-arrow-right"></i> Customize it</strong></a>
-              <p class="text-muted collapse" id="cf-theme-one"><small>Culturefeed Bootstrap has some ' . l('basic theme settings', $base_url . '/admin/appearance/settings/culturefeed_bootstrap') . ' where you can customize branding colors, font-family, border-radius, navbars, etc. to your own needs. If you are a Drupal themer you can - of course - change all possible less variables and bootstrap overrides or kick everything out and build your own theme :-)</small></p>
+              <p class="text-muted collapse" id="cf-theme-one"><small>Culturefeed Bootstrap has some <a href="/admin/appearance/settings/culturefeed_bootstrap">basic theme settings</a> where you can customize branding colors, font-family, border-radius, navbars, etc. to your own needs. If you are a Drupal themer you can - of course - change all possible less variables and bootstrap overrides or kick everything out and build your own theme :-)</small></p>
               </td>
             </tr>
             <tr>
@@ -805,7 +804,7 @@ function culturefeed_kickstart_install() {
             </tr>
           </tbody>
         </table>
-        <p>' . l('Customize theme &rarr;', $base_url . '/admin/appearance/settings/culturefeed_bootstrap', array('attributes' => array('class' => 'btn btn-primary btn-block', 'role' => 'button'), 'html' => TRUE)) . '</p>
+        <p><a href="/admin/appearance/settings/culturefeed_bootstrap" class="btn btn-primary btn-block">Customize theme &rarr;</a></p>
       </div>
     </div>  
   </div>
