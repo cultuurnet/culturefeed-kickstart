@@ -218,18 +218,6 @@ function culturefeed_kickstart_install() {
     ),
     array(
       'module' => 'culturefeed_social',
-      'delta' => 'followers',
-      'theme' => $default_theme,
-      'status' => 1,
-      'weight' => -31,
-      'region' => 'sidebar_second',
-      'pages' => 'agenda/g/*',
-      'visibility' => 1,
-      'cache' => -1,
-      'title' => ''
-    ),
-    array(
-      'module' => 'culturefeed_social',
       'delta' => 'recommendations',
       'theme' => $default_theme,
       'status' => 1,
