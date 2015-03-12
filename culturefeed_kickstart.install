@@ -314,7 +314,7 @@ function culturefeed_kickstart_install() {
       'pages' => "agenda/g/*",
       'visibility' => 1,
       'cache' => -1,
-      'title' => ''
+      'title' => '<none>'
     ),
     array(
       'module' => 'culturefeed_pages',
