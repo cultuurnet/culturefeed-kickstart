@@ -650,6 +650,12 @@ function culturefeed_kickstart_install() {
   db_insert('users_roles')
     ->fields(array('uid' => 1, 'rid' => $admin_role->rid))
     ->execute();
+    
+  // Disable contact form for users
+  variable_set('contact_default_status', 0);
+    
+  // Disable registration of user accounts
+  variable_set('user_register', 0);
 
   // Create a Home link in the main menu.
   $item = array(
