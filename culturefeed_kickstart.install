@@ -243,6 +243,18 @@ function culturefeed_kickstart_install() {
     ),
     array(
       'module' => 'culturefeed_ui',
+      'delta' => 'my_uitid',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => -29,
+      'region' => 'sidebar_second',
+      'pages' => "culturefeed/*\r\nuser/*",
+      'visibility' => 1,
+      'cache' => -1,
+      'title' => '<none>'
+    ),
+    array(
+      'module' => 'culturefeed_ui',
       'delta' => 'profile_menu',
       'theme' => $default_theme,
       'status' => 1,
