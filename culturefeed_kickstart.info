@@ -20,6 +20,7 @@ dependencies[] = imce
 dependencies[] = imce_wysiwyg
 dependencies[] = wysiwyg
 dependencies[] = views
+dependencies[] = views_ui
 dependencies[] = ctools
 dependencies[] = date
 dependencies[] = token
