@@ -5,5 +5,5 @@
     "cultuurnet/cdb": "~2.0",
     "leafo/lessphp": ">=0.3.7"
   },
-  "minimum-stability": "stable"
+  "minimum-stability": "dev"
 }
