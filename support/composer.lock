@@ -4,11 +4,11 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a6691530ee5ff3acfc2d77073f22fed5",
+    "hash": "303bba4bde7af64f98a246f15afb2fd9",
     "packages": [
         {
             "name": "cultuurnet/auth",
-            "version": "dev-develop",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cultuurnet/Auth.git",
