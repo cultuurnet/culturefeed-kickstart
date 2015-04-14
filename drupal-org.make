@@ -22,7 +22,7 @@ projects[less][version] = 3.0
 
 projects[culturefeed][type] = module
 projects[culturefeed][download][type] = git
-projects[culturefeed][download][branch] = "develop"
+projects[culturefeed][download][branch] = "feature/MSS-151"
 projects[culturefeed][download][url] = https://github.com/cultuurnet/culturefeed.git
 
 projects[culturefeed_bootstrap][type] = theme
