@@ -102,23 +102,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cultuurnet/Cdb.git",
-                "reference": "fca560abcf9ce63605b486ffc06c90f1c823db80"
+                "reference": "9572ce28255d8fcab240951e292e97cee58bb0c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cultuurnet/Cdb/zipball/fca560abcf9ce63605b486ffc06c90f1c823db80",
-                "reference": "fca560abcf9ce63605b486ffc06c90f1c823db80",
+                "url": "https://api.github.com/repos/cultuurnet/Cdb/zipball/9572ce28255d8fcab240951e292e97cee58bb0c9",
+                "reference": "9572ce28255d8fcab240951e292e97cee58bb0c9",
                 "shasum": ""
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.3"
+                "phpunit/phpunit": "~4.3",
+                "satooshi/php-coveralls": "~0.7"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-release/2.x": "2.x-dev"
-                }
-            },
             "autoload": {
                 "psr-0": {
                     "CultureFeed_Cdb_": [
@@ -131,7 +127,7 @@
                 "Apache-2.0"
             ],
             "description": "PHP library for hydrating/manipulating CultuurNet's Cdb XML documents",
-            "time": "2015-04-14 18:49:00"
+            "time": "2015-04-22 14:17:58"
         },
         {
             "name": "cultuurnet/culturefeed-php",
