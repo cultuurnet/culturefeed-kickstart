@@ -1,9 +1,9 @@
 {
   "require": {
-    "cultuurnet/culturefeed-php": "~1.0",
+    "cultuurnet/culturefeed-php": "dev-feature/MSS-151 as 1.0",
     "cultuurnet/search": "~1.0",
-    "cultuurnet/cdb": "dev-feature/MSS-151 as 2.0",
     "leafo/lessphp": ">=0.3.7"
   },
-  "minimum-stability": "dev"
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
