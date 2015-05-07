@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "22f1dcb7c016c25add7e35e730aa87da",
+    "hash": "e3002850d328be9505581e286be89678",
     "packages": [
         {
             "name": "cultuurnet/auth",
@@ -55,16 +55,16 @@
         },
         {
             "name": "cultuurnet/cdb",
-            "version": "2.1.x-dev",
+            "version": "dev-feature/MSS-151",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cultuurnet/Cdb.git",
-                "reference": "8f61af9e7cd734ba07fcb9d2b6a729366fe8c482"
+                "reference": "d4f5c2323e95050a888ad2d94d05a0a947d87d72"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cultuurnet/Cdb/zipball/8f61af9e7cd734ba07fcb9d2b6a729366fe8c482",
-                "reference": "8f61af9e7cd734ba07fcb9d2b6a729366fe8c482",
+                "url": "https://api.github.com/repos/cultuurnet/Cdb/zipball/d4f5c2323e95050a888ad2d94d05a0a947d87d72",
+                "reference": "d4f5c2323e95050a888ad2d94d05a0a947d87d72",
                 "shasum": ""
             },
             "require-dev": {
@@ -84,7 +84,7 @@
                 "Apache-2.0"
             ],
             "description": "PHP library for hydrating/manipulating CultuurNet's Cdb XML documents",
-            "time": "2015-05-05 14:00:52"
+            "time": "2015-05-07 13:24:19"
         },
         {
             "name": "cultuurnet/culturefeed-php",
@@ -92,12 +92,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cultuurnet/culturefeed-php.git",
-                "reference": "42a384669826f2ecf10e2c4371dfa8a4c530963b"
+                "reference": "61eb5353441a80f701a3cefccd3f593a618634f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cultuurnet/culturefeed-php/zipball/42a384669826f2ecf10e2c4371dfa8a4c530963b",
-                "reference": "42a384669826f2ecf10e2c4371dfa8a4c530963b",
+                "url": "https://api.github.com/repos/cultuurnet/culturefeed-php/zipball/61eb5353441a80f701a3cefccd3f593a618634f1",
+                "reference": "61eb5353441a80f701a3cefccd3f593a618634f1",
                 "shasum": ""
             },
             "require": {
@@ -151,7 +151,7 @@
                 }
             ],
             "description": "Culturefeed PHP library",
-            "time": "2015-05-05 12:28:49"
+            "time": "2015-05-07 13:22:50"
         },
         {
             "name": "cultuurnet/search",
@@ -839,11 +839,18 @@
             "alias_normalized": "1.0.0.0",
             "version": "dev-feature/MSS-151",
             "package": "cultuurnet/culturefeed-php"
+        },
+        {
+            "alias": "2.1",
+            "alias_normalized": "2.1.0.0",
+            "version": "dev-feature/MSS-151",
+            "package": "cultuurnet/cdb"
         }
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "cultuurnet/culturefeed-php": 20
+        "cultuurnet/culturefeed-php": 20,
+        "cultuurnet/cdb": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

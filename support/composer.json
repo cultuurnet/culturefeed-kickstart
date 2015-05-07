@@ -2,7 +2,8 @@
   "require": {
     "cultuurnet/culturefeed-php": "dev-feature/MSS-151 as 1.0",
     "cultuurnet/search": "~1.0",
-    "leafo/lessphp": ">=0.3.7"
+    "leafo/lessphp": ">=0.3.7",
+    "cultuurnet/cdb": "dev-feature/MSS-151 as 2.1"
   },
   "minimum-stability": "dev",
   "prefer-stable": true
