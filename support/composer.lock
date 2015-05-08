@@ -59,12 +59,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cultuurnet/calendar-summary.git",
-                "reference": "813ee3d05b60d5caf4956ac6f882308f9c88964b"
+                "reference": "616b188c6c80a3ea49048c5c60785d27312fd4ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cultuurnet/calendar-summary/zipball/813ee3d05b60d5caf4956ac6f882308f9c88964b",
-                "reference": "813ee3d05b60d5caf4956ac6f882308f9c88964b",
+                "url": "https://api.github.com/repos/cultuurnet/calendar-summary/zipball/616b188c6c80a3ea49048c5c60785d27312fd4ac",
+                "reference": "616b188c6c80a3ea49048c5c60785d27312fd4ac",
                 "shasum": ""
             },
             "require": {
@@ -94,7 +94,7 @@
                 "Apache-2.0"
             ],
             "description": "Library to convert a cdbXML input to a readable summary",
-            "time": "2015-05-08 09:26:00"
+            "time": "2015-05-08 15:08:54"
         },
         {
             "name": "cultuurnet/cdb",
