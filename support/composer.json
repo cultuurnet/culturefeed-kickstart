@@ -8,5 +8,5 @@
     "leafo/lessphp": ">=0.3.7",
     "mobiledetect/mobiledetectlib": "dev-master"
   },
-  "minimum-stability": "stable"
+  "minimum-stability": "dev"
 }
