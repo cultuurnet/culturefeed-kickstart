@@ -4,11 +4,11 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0843502636ba58c8f19bcd4b12dd097b",
+    "hash": "733c73513298400bc0d40f5e02d4b790",
     "packages": [
         {
             "name": "cultuurnet/auth",
-            "version": "dev-develop",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cultuurnet/Auth.git",
@@ -98,23 +98,27 @@
         },
         {
             "name": "cultuurnet/cdb",
-            "version": "2.1.x-dev",
+            "version": "v2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cultuurnet/Cdb.git",
-                "reference": "778ea9f7036aa6fbac7999a6a0864553eef7834a"
+                "reference": "1d0d67517444df548d8787835276b50a21c4eb34"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cultuurnet/Cdb/zipball/778ea9f7036aa6fbac7999a6a0864553eef7834a",
-                "reference": "778ea9f7036aa6fbac7999a6a0864553eef7834a",
+                "url": "https://api.github.com/repos/cultuurnet/Cdb/zipball/1d0d67517444df548d8787835276b50a21c4eb34",
+                "reference": "1d0d67517444df548d8787835276b50a21c4eb34",
                 "shasum": ""
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.3",
-                "satooshi/php-coveralls": "~0.7"
+                "phpunit/phpunit": "~4.3"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-release/2.x": "2.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "CultureFeed_Cdb_": [
@@ -127,28 +131,27 @@
                 "Apache-2.0"
             ],
             "description": "PHP library for hydrating/manipulating CultuurNet's Cdb XML documents",
-            "time": "2015-05-07 15:44:16"
+            "time": "2015-01-16 15:17:03"
         },
         {
             "name": "cultuurnet/culturefeed-php",
-            "version": "1.5.x-dev",
+            "version": "v1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cultuurnet/culturefeed-php.git",
-                "reference": "8c31aa1be1e3fdda7dadf679c966cd34000af897"
+                "reference": "f7dba430982fb9538747a92eea4ee2dc35e038d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cultuurnet/culturefeed-php/zipball/8c31aa1be1e3fdda7dadf679c966cd34000af897",
-                "reference": "8c31aa1be1e3fdda7dadf679c966cd34000af897",
+                "url": "https://api.github.com/repos/cultuurnet/culturefeed-php/zipball/f7dba430982fb9538747a92eea4ee2dc35e038d8",
+                "reference": "f7dba430982fb9538747a92eea4ee2dc35e038d8",
                 "shasum": ""
             },
             "require": {
                 "cultuurnet/cdb": "~2.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.4.0",
-                "satooshi/php-coveralls": "~0.7"
+                "phpunit/phpunit": "~4.4.0"
             },
             "type": "library",
             "extra": {
@@ -194,20 +197,20 @@
                 }
             ],
             "description": "Culturefeed PHP library",
-            "time": "2015-05-05 18:04:15"
+            "time": "2015-05-04 15:35:41"
         },
         {
             "name": "cultuurnet/search",
-            "version": "1.1.x-dev",
+            "version": "v1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cultuurnet/Search.git",
-                "reference": "32d454fa8ceafd7d35d8a7795e2b9d9879e5f5d5"
+                "reference": "048ad13ac386c3676dd3236c064f4184a10c1d73"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cultuurnet/Search/zipball/32d454fa8ceafd7d35d8a7795e2b9d9879e5f5d5",
-                "reference": "32d454fa8ceafd7d35d8a7795e2b9d9879e5f5d5",
+                "url": "https://api.github.com/repos/cultuurnet/Search/zipball/048ad13ac386c3676dd3236c064f4184a10c1d73",
+                "reference": "048ad13ac386c3676dd3236c064f4184a10c1d73",
                 "shasum": ""
             },
             "require": {
@@ -240,7 +243,7 @@
                 "Apache-2.0"
             ],
             "description": "CultuurNet search service",
-            "time": "2015-04-01 09:53:28"
+            "time": "2015-04-24 10:53:19"
         },
         {
             "name": "guzzle/common",
@@ -652,16 +655,16 @@
         },
         {
             "name": "justinrainbow/json-schema",
-            "version": "dev-master",
+            "version": "1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/justinrainbow/json-schema.git",
-                "reference": "1235d2e2100545e775512f9c88cbb0b680245a24"
+                "reference": "2465fe486c864e30badaa4d005ebdf89dbc503f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/1235d2e2100545e775512f9c88cbb0b680245a24",
-                "reference": "1235d2e2100545e775512f9c88cbb0b680245a24",
+                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/2465fe486c864e30badaa4d005ebdf89dbc503f3",
+                "reference": "2465fe486c864e30badaa4d005ebdf89dbc503f3",
                 "shasum": ""
             },
             "require": {
@@ -714,28 +717,22 @@
                 "json",
                 "schema"
             ],
-            "time": "2015-03-31 16:01:45"
+            "time": "2015-03-27 16:41:39"
         },
         {
             "name": "leafo/lessphp",
-            "version": "dev-master",
+            "version": "v0.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/leafo/lessphp.git",
-                "reference": "e701984d5d488599441623d3d56bd42103019ab6"
+                "reference": "0f5a7f5545d2bcf4e9fad9a228c8ad89cc9aa283"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/leafo/lessphp/zipball/e701984d5d488599441623d3d56bd42103019ab6",
-                "reference": "e701984d5d488599441623d3d56bd42103019ab6",
+                "url": "https://api.github.com/repos/leafo/lessphp/zipball/0f5a7f5545d2bcf4e9fad9a228c8ad89cc9aa283",
+                "reference": "0f5a7f5545d2bcf4e9fad9a228c8ad89cc9aa283",
                 "shasum": ""
             },
-            "require-dev": {
-                "phpunit/phpunit": "~4.3"
-            },
-            "bin": [
-                "plessc"
-            ],
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -761,7 +758,7 @@
             ],
             "description": "lessphp is a compiler for LESS written in PHP.",
             "homepage": "http://leafo.net/lessphp/",
-            "time": "2014-12-29 20:45:53"
+            "time": "2014-11-24 18:39:20"
         },
         {
             "name": "mobiledetect/mobiledetectlib",
@@ -819,26 +816,27 @@
         },
         {
             "name": "symfony/console",
-            "version": "2.8.x-dev",
+            "version": "v2.6.6",
+            "target-dir": "Symfony/Component/Console",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "36194c12ded9b0dc2b5d719ad626257b5bbc2d96"
+                "reference": "5b91dc4ed5eb08553f57f6df04c4730a73992667"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/36194c12ded9b0dc2b5d719ad626257b5bbc2d96",
-                "reference": "36194c12ded9b0dc2b5d719ad626257b5bbc2d96",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/5b91dc4ed5eb08553f57f6df04c4730a73992667",
+                "reference": "5b91dc4ed5eb08553f57f6df04c4730a73992667",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.9"
+                "php": ">=5.3.3"
             },
             "require-dev": {
                 "psr/log": "~1.0",
-                "symfony/event-dispatcher": "~2.1|~3.0.0",
-                "symfony/phpunit-bridge": "~2.7|~3.0.0",
-                "symfony/process": "~2.1|~3.0.0"
+                "symfony/event-dispatcher": "~2.1",
+                "symfony/phpunit-bridge": "~2.7",
+                "symfony/process": "~2.1"
             },
             "suggest": {
                 "psr/log": "For using the console logger",
@@ -848,11 +846,11 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.8-dev"
+                    "dev-master": "2.6-dev"
                 }
             },
             "autoload": {
-                "psr-4": {
+                "psr-0": {
                     "Symfony\\Component\\Console\\": ""
                 }
             },
@@ -872,32 +870,33 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2015-04-24 07:03:44"
+            "time": "2015-03-30 15:54:10"
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "2.8.x-dev",
+            "version": "v2.6.6",
+            "target-dir": "Symfony/Component/EventDispatcher",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/EventDispatcher.git",
-                "reference": "aced82e3cd15d40e5fadebec5dae9fb1ae666596"
+                "reference": "70f7c8478739ad21e3deef0d977b38c77f1fb284"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/aced82e3cd15d40e5fadebec5dae9fb1ae666596",
-                "reference": "aced82e3cd15d40e5fadebec5dae9fb1ae666596",
+                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/70f7c8478739ad21e3deef0d977b38c77f1fb284",
+                "reference": "70f7c8478739ad21e3deef0d977b38c77f1fb284",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.9"
+                "php": ">=5.3.3"
             },
             "require-dev": {
                 "psr/log": "~1.0",
-                "symfony/config": "~2.0,>=2.0.5|~3.0.0",
-                "symfony/dependency-injection": "~2.6|~3.0.0",
-                "symfony/expression-language": "~2.6|~3.0.0",
-                "symfony/phpunit-bridge": "~2.7|~3.0.0",
-                "symfony/stopwatch": "~2.3|~3.0.0"
+                "symfony/config": "~2.0,>=2.0.5",
+                "symfony/dependency-injection": "~2.6",
+                "symfony/expression-language": "~2.6",
+                "symfony/phpunit-bridge": "~2.7",
+                "symfony/stopwatch": "~2.3"
             },
             "suggest": {
                 "symfony/dependency-injection": "",
@@ -906,11 +905,11 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.8-dev"
+                    "dev-master": "2.6-dev"
                 }
             },
             "autoload": {
-                "psr-4": {
+                "psr-0": {
                     "Symfony\\Component\\EventDispatcher\\": ""
                 }
             },
@@ -930,13 +929,21 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "http://symfony.com",
-            "time": "2015-05-05 20:46:18"
+            "time": "2015-03-13 17:37:22"
         }
     ],
     "packages-dev": [],
-    "aliases": [],
-    "minimum-stability": "dev",
+    "aliases": [
+        {
+            "alias": "1.0",
+            "alias_normalized": "1.0.0.0",
+            "version": "dev-develop",
+            "package": "cultuurnet/calendar-summary"
+        }
+    ],
+    "minimum-stability": "stable",
     "stability-flags": {
+        "cultuurnet/calendar-summary": 20,
         "mobiledetect/mobiledetectlib": 20
     },
     "prefer-stable": false,
