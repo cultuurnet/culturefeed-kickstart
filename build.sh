@@ -2,7 +2,6 @@
 
 current_dir=$PWD;
 
-#build_dir="${TMPDIR}culturefeed";
 echo "Enter the absolute path to the directory where you want to have the site build"
 read build_dir;
 
@@ -27,17 +26,12 @@ build_dir=$PWD;
 drush make -y "${current_dir}/drupal-org-core.make";
 
 mkdir profiles/culturefeed_kickstart;
-# cp -R "${current_dir}"/* ./profiles/culturefeed_kickstart/;
 cp -R "${current_dir}"/translations ./profiles/culturefeed_kickstart/translations;
 cp -R "${current_dir}"/culturefeed_kickstart.info ./profiles/culturefeed_kickstart/culturefeed_kickstart.info;
 cp -R "${current_dir}"/culturefeed_kickstart.install ./profiles/culturefeed_kickstart/culturefeed_kickstart.install;
 cp -R "${current_dir}"/culturefeed_kickstart.profile ./profiles/culturefeed_kickstart/culturefeed_kickstart.profile;
 
 cd profiles/culturefeed_kickstart;
-
-# The following currently does not work as drupal.org does not allow
-# to include modules not hosted on git.drupal.org
-#drush make -y --drupal-org=contrib "${current_dir}/drupal-org.make";
 
 drush make -y --no-core "${current_dir}/drupal-org.make";
 mv sites/all/* ./
