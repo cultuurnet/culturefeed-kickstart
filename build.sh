@@ -1,8 +1,10 @@
 #!/bin/bash
 
+current_dir=$PWD;
+
 #build_dir="${TMPDIR}culturefeed";
 echo "Enter the absolute path to the directory where you want to have the site build"
-read build_dir
+read build_dir;
 
 if [ -z "$build_dir" ]; 
 then 
@@ -11,12 +13,16 @@ fi
 
 echo "creating site in build_dir: $build_dir"
 
-current_dir=$PWD
+if [ -e $build_dir ]; then
+  # @todo first ask for confirmation to remove it
+  rm -Rf $build_dir;
+fi
 
-rm -Rf $build_dir;
 mkdir $build_dir;
 
 cd $build_dir;
+
+build_dir=$PWD;
 
 drush make -y "${current_dir}/drupal-org-core.make";
 
@@ -54,11 +60,11 @@ printf "require 'vendor/autoload.php';\n" >> ./sites/default/default.settings.ph
 # Get latest versions.
 cd ${build_dir};
 cd vendor/cultuurnet/cdb
-git pull
+git pull | true
 cd ../search
-git pull
+git pull | true
 cd ../auth
-git pull
+git pull | true
 
 # Switch back to working directory.
 cd ${current_dir};
