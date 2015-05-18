@@ -43,7 +43,7 @@ cd $build_dir;
 cp "${current_dir}/support/composer."* .;
 
 # Install dependencies with composer.
-composer install;
+composer install --ignore-platform-reqs;
 
 printf "\n" >> ./sites/default/default.settings.php
 printf "/**\n" >> ./sites/default/default.settings.php
