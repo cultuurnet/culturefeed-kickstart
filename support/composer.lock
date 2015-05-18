@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e3002850d328be9505581e286be89678",
+    "hash": "48d4c13cd3428d81a2ba901576997781",
     "packages": [
         {
             "name": "cultuurnet/auth",
@@ -54,17 +54,60 @@
             "time": "2014-10-28 13:01:49"
         },
         {
-            "name": "cultuurnet/cdb",
-            "version": "dev-feature/MSS-151",
+            "name": "cultuurnet/calendar-summary",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/cultuurnet/Cdb.git",
-                "reference": "778ea9f7036aa6fbac7999a6a0864553eef7834a"
+                "url": "https://github.com/cultuurnet/calendar-summary.git",
+                "reference": "b91af20bf82e3fbc4fcd677c03df7020bd00e85c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cultuurnet/Cdb/zipball/778ea9f7036aa6fbac7999a6a0864553eef7834a",
-                "reference": "778ea9f7036aa6fbac7999a6a0864553eef7834a",
+                "url": "https://api.github.com/repos/cultuurnet/calendar-summary/zipball/b91af20bf82e3fbc4fcd677c03df7020bd00e85c",
+                "reference": "b91af20bf82e3fbc4fcd677c03df7020bd00e85c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-intl": "*"
+            },
+            "require-dev": {
+                "phing/phing": "~2.10",
+                "phpunit/phpunit": "~4.5",
+                "squizlabs/php_codesniffer": "~2.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev",
+                    "dev-develop": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "CultuurNet\\CalendarSummary\\": [
+                        "src"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "Library to convert a cdbXML input to a readable summary",
+            "time": "2015-05-08 14:46:28"
+        },
+        {
+            "name": "cultuurnet/cdb",
+            "version": "2.1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cultuurnet/Cdb.git",
+                "reference": "970a3cb6a6d9567d9b0d0be97701f3db315e233d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cultuurnet/Cdb/zipball/970a3cb6a6d9567d9b0d0be97701f3db315e233d",
+                "reference": "970a3cb6a6d9567d9b0d0be97701f3db315e233d",
                 "shasum": ""
             },
             "require-dev": {
@@ -84,7 +127,7 @@
                 "Apache-2.0"
             ],
             "description": "PHP library for hydrating/manipulating CultuurNet's Cdb XML documents",
-            "time": "2015-05-07 15:44:16"
+            "time": "2015-05-18 09:57:11"
         },
         {
             "name": "cultuurnet/culturefeed-php",
@@ -92,12 +135,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cultuurnet/culturefeed-php.git",
-                "reference": "a0043899455573803498aeb034c84e4ec45fac21"
+                "reference": "21e8643feb0c4322e6aea9ae497514ff46d6602f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cultuurnet/culturefeed-php/zipball/a0043899455573803498aeb034c84e4ec45fac21",
-                "reference": "a0043899455573803498aeb034c84e4ec45fac21",
+                "url": "https://api.github.com/repos/cultuurnet/culturefeed-php/zipball/21e8643feb0c4322e6aea9ae497514ff46d6602f",
+                "reference": "21e8643feb0c4322e6aea9ae497514ff46d6602f",
                 "shasum": ""
             },
             "require": {
@@ -151,7 +194,7 @@
                 }
             ],
             "description": "Culturefeed PHP library",
-            "time": "2015-05-11 11:57:13"
+            "time": "2015-05-18 11:10:43"
         },
         {
             "name": "cultuurnet/search",
@@ -715,6 +758,60 @@
             "time": "2014-11-24 18:39:20"
         },
         {
+            "name": "mobiledetect/mobiledetectlib",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/serbanghita/Mobile-Detect.git",
+                "reference": "fc81cb582c9cd9024a16e0698c02b6d3cb0229df"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/serbanghita/Mobile-Detect/zipball/fc81cb582c9cd9024a16e0698c02b6d3cb0229df",
+                "reference": "fc81cb582c9cd9024a16e0698c02b6d3cb0229df",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.0.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "dev-master",
+                "johnkary/phpunit-speedtrap": "~1.0@dev",
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "Mobile_Detect.php"
+                ],
+                "psr-0": {
+                    "Detection": "namespaced/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Serban Ghita",
+                    "email": "serbanghita@gmail.com",
+                    "homepage": "http://mobiledetect.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Mobile_Detect is a lightweight PHP class for detecting mobile devices. It uses the User-Agent string combined with specific HTTP headers to detect the mobile environment.",
+            "homepage": "https://github.com/serbanghita/Mobile-Detect",
+            "keywords": [
+                "detect mobile devices",
+                "mobile",
+                "mobile detect",
+                "mobile detector",
+                "php mobile detect"
+            ],
+            "time": "2015-04-25 20:10:52"
+        },
+        {
             "name": "symfony/console",
             "version": "v2.6.7",
             "target-dir": "Symfony/Component/Console",
@@ -835,22 +932,16 @@
     "packages-dev": [],
     "aliases": [
         {
-            "alias": "1.0",
-            "alias_normalized": "1.0.0.0",
+            "alias": "1.5",
+            "alias_normalized": "1.5.0.0",
             "version": "dev-feature/MSS-151",
             "package": "cultuurnet/culturefeed-php"
-        },
-        {
-            "alias": "2.1",
-            "alias_normalized": "2.1.0.0",
-            "version": "dev-feature/MSS-151",
-            "package": "cultuurnet/cdb"
         }
     ],
     "minimum-stability": "dev",
     "stability-flags": {
         "cultuurnet/culturefeed-php": 20,
-        "cultuurnet/cdb": 20
+        "mobiledetect/mobiledetectlib": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

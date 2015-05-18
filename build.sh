@@ -1,8 +1,9 @@
 #!/bin/bash
 
-#build_dir="${TMPDIR}culturefeed";
+current_dir=$PWD;
+
 echo "Enter the absolute path to the directory where you want to have the site build"
-read build_dir
+read build_dir;
 
 if [ -z "$build_dir" ]; 
 then 
@@ -11,27 +12,26 @@ fi
 
 echo "creating site in build_dir: $build_dir"
 
-current_dir=$PWD
+if [ -e $build_dir ]; then
+  # @todo first ask for confirmation to remove it
+  rm -Rf $build_dir;
+fi
 
-rm -Rf $build_dir;
 mkdir $build_dir;
 
 cd $build_dir;
 
+build_dir=$PWD;
+
 drush make -y "${current_dir}/drupal-org-core.make";
 
 mkdir profiles/culturefeed_kickstart;
-# cp -R "${current_dir}"/* ./profiles/culturefeed_kickstart/;
 cp -R "${current_dir}"/translations ./profiles/culturefeed_kickstart/translations;
 cp -R "${current_dir}"/culturefeed_kickstart.info ./profiles/culturefeed_kickstart/culturefeed_kickstart.info;
 cp -R "${current_dir}"/culturefeed_kickstart.install ./profiles/culturefeed_kickstart/culturefeed_kickstart.install;
 cp -R "${current_dir}"/culturefeed_kickstart.profile ./profiles/culturefeed_kickstart/culturefeed_kickstart.profile;
 
 cd profiles/culturefeed_kickstart;
-
-# The following currently does not work as drupal.org does not allow
-# to include modules not hosted on git.drupal.org
-#drush make -y --drupal-org=contrib "${current_dir}/drupal-org.make";
 
 drush make -y --no-core "${current_dir}/drupal-org.make";
 mv sites/all/* ./
@@ -43,7 +43,7 @@ cd $build_dir;
 cp "${current_dir}/support/composer."* .;
 
 # Install dependencies with composer.
-composer install;
+composer install --ignore-platform-reqs;
 
 printf "\n" >> ./sites/default/default.settings.php
 printf "/**\n" >> ./sites/default/default.settings.php

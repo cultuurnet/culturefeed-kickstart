@@ -1,9 +1,11 @@
 {
   "require": {
-    "cultuurnet/culturefeed-php": "dev-feature/MSS-151 as 1.0",
+    "cultuurnet/culturefeed-php": "dev-feature/MSS-151 as 1.5",
     "cultuurnet/search": "~1.0",
     "leafo/lessphp": ">=0.3.7",
-    "cultuurnet/cdb": "dev-feature/MSS-151 as 2.1"
+    "cultuurnet/cdb": "~2.1",
+    "mobiledetect/mobiledetectlib": "dev-master",
+    "cultuurnet/calendar-summary": "~1.0"
   },
   "minimum-stability": "dev",
   "prefer-stable": true
