@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f8cb632f13bc4c975b80da63284e0ba4",
+    "hash": "0cb955b71679bc743906f179ac56717a",
     "packages": [
         {
             "name": "cultuurnet/auth",
@@ -54,6 +54,49 @@
             "time": "2014-10-28 13:01:49"
         },
         {
+            "name": "cultuurnet/calendar-summary",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cultuurnet/calendar-summary.git",
+                "reference": "b91af20bf82e3fbc4fcd677c03df7020bd00e85c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cultuurnet/calendar-summary/zipball/b91af20bf82e3fbc4fcd677c03df7020bd00e85c",
+                "reference": "b91af20bf82e3fbc4fcd677c03df7020bd00e85c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-intl": "*"
+            },
+            "require-dev": {
+                "phing/phing": "~2.10",
+                "phpunit/phpunit": "~4.5",
+                "squizlabs/php_codesniffer": "~2.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev",
+                    "dev-develop": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "CultuurNet\\CalendarSummary\\": [
+                        "src"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "Library to convert a cdbXML input to a readable summary",
+            "time": "2015-05-08 14:46:28"
+        },
+        {
             "name": "cultuurnet/cdb",
             "version": "v2.0.2",
             "source": {
@@ -92,16 +135,16 @@
         },
         {
             "name": "cultuurnet/culturefeed-php",
-            "version": "v1.4.0",
+            "version": "v1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cultuurnet/culturefeed-php.git",
-                "reference": "af9b3949bd9adff0b62fac5ae5e4471fb67530a7"
+                "reference": "f7dba430982fb9538747a92eea4ee2dc35e038d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cultuurnet/culturefeed-php/zipball/af9b3949bd9adff0b62fac5ae5e4471fb67530a7",
-                "reference": "af9b3949bd9adff0b62fac5ae5e4471fb67530a7",
+                "url": "https://api.github.com/repos/cultuurnet/culturefeed-php/zipball/f7dba430982fb9538747a92eea4ee2dc35e038d8",
+                "reference": "f7dba430982fb9538747a92eea4ee2dc35e038d8",
                 "shasum": ""
             },
             "require": {
@@ -154,7 +197,7 @@
                 }
             ],
             "description": "Culturefeed PHP library",
-            "time": "2015-03-20 18:07:31"
+            "time": "2015-05-04 15:35:41"
         },
         {
             "name": "cultuurnet/search",
@@ -773,17 +816,17 @@
         },
         {
             "name": "symfony/console",
-            "version": "v2.6.6",
+            "version": "v2.6.7",
             "target-dir": "Symfony/Component/Console",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "5b91dc4ed5eb08553f57f6df04c4730a73992667"
+                "reference": "ebc5679854aa24ed7d65062e9e3ab0b18a917272"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/5b91dc4ed5eb08553f57f6df04c4730a73992667",
-                "reference": "5b91dc4ed5eb08553f57f6df04c4730a73992667",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/ebc5679854aa24ed7d65062e9e3ab0b18a917272",
+                "reference": "ebc5679854aa24ed7d65062e9e3ab0b18a917272",
                 "shasum": ""
             },
             "require": {
@@ -817,31 +860,31 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "Symfony Console Component",
-            "homepage": "http://symfony.com",
-            "time": "2015-03-30 15:54:10"
+            "homepage": "https://symfony.com",
+            "time": "2015-05-02 15:18:45"
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v2.6.6",
+            "version": "v2.6.7",
             "target-dir": "Symfony/Component/EventDispatcher",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/EventDispatcher.git",
-                "reference": "70f7c8478739ad21e3deef0d977b38c77f1fb284"
+                "reference": "672593bc4b0043a0acf91903bb75a1c82d8f2e02"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/70f7c8478739ad21e3deef0d977b38c77f1fb284",
-                "reference": "70f7c8478739ad21e3deef0d977b38c77f1fb284",
+                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/672593bc4b0043a0acf91903bb75a1c82d8f2e02",
+                "reference": "672593bc4b0043a0acf91903bb75a1c82d8f2e02",
                 "shasum": ""
             },
             "require": {
@@ -876,17 +919,17 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "Symfony EventDispatcher Component",
-            "homepage": "http://symfony.com",
-            "time": "2015-03-13 17:37:22"
+            "homepage": "https://symfony.com",
+            "time": "2015-05-02 15:18:45"
         }
     ],
     "packages-dev": [],

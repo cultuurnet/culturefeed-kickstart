@@ -4,7 +4,8 @@
     "cultuurnet/search": "~1.0",
     "cultuurnet/cdb": "~2.0",
     "leafo/lessphp": ">=0.3.7",
-    "mobiledetect/mobiledetectlib": "dev-master"
+    "mobiledetect/mobiledetectlib": "dev-master",
+    "cultuurnet/calendar-summary": "~1.0"
   },
   "minimum-stability": "stable"
 }
