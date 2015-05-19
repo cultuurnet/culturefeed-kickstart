@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "48d4c13cd3428d81a2ba901576997781",
+    "hash": "0adefa21202f2e217e4bd82f0279ba5d",
     "packages": [
         {
             "name": "cultuurnet/auth",
@@ -198,16 +198,16 @@
         },
         {
             "name": "cultuurnet/search",
-            "version": "v1.1.2",
+            "version": "dev-feature/MSS-151",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cultuurnet/Search.git",
-                "reference": "048ad13ac386c3676dd3236c064f4184a10c1d73"
+                "reference": "f754cfc23fdb45d73621bfa2dcf02bb8cc13a732"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cultuurnet/Search/zipball/048ad13ac386c3676dd3236c064f4184a10c1d73",
-                "reference": "048ad13ac386c3676dd3236c064f4184a10c1d73",
+                "url": "https://api.github.com/repos/cultuurnet/Search/zipball/f754cfc23fdb45d73621bfa2dcf02bb8cc13a732",
+                "reference": "f754cfc23fdb45d73621bfa2dcf02bb8cc13a732",
                 "shasum": ""
             },
             "require": {
@@ -240,7 +240,7 @@
                 "Apache-2.0"
             ],
             "description": "CultuurNet search service",
-            "time": "2015-04-24 10:53:19"
+            "time": "2015-05-19 10:12:58"
         },
         {
             "name": "guzzle/common",
@@ -936,11 +936,18 @@
             "alias_normalized": "1.5.0.0",
             "version": "dev-feature/MSS-151",
             "package": "cultuurnet/culturefeed-php"
+        },
+        {
+            "alias": "1.2",
+            "alias_normalized": "1.2.0.0",
+            "version": "dev-feature/MSS-151",
+            "package": "cultuurnet/search"
         }
     ],
     "minimum-stability": "dev",
     "stability-flags": {
         "cultuurnet/culturefeed-php": 20,
+        "cultuurnet/search": 20,
         "mobiledetect/mobiledetectlib": 20
     },
     "prefer-stable": true,

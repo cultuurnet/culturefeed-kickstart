@@ -1,7 +1,7 @@
 {
   "require": {
     "cultuurnet/culturefeed-php": "dev-feature/MSS-151 as 1.5",
-    "cultuurnet/search": "~1.0",
+    "cultuurnet/search": "dev-feature/MSS-151 as 1.2",
     "leafo/lessphp": ">=0.3.7",
     "cultuurnet/cdb": "~2.1",
     "mobiledetect/mobiledetectlib": "dev-master",
