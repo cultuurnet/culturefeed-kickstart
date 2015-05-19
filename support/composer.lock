@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "hash": "48d4c13cd3428d81a2ba901576997781",
@@ -102,12 +102,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cultuurnet/Cdb.git",
-                "reference": "970a3cb6a6d9567d9b0d0be97701f3db315e233d"
+                "reference": "0ad82c83c02bd52e1e0dcfc1176e6967df4d8715"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cultuurnet/Cdb/zipball/970a3cb6a6d9567d9b0d0be97701f3db315e233d",
-                "reference": "970a3cb6a6d9567d9b0d0be97701f3db315e233d",
+                "url": "https://api.github.com/repos/cultuurnet/Cdb/zipball/0ad82c83c02bd52e1e0dcfc1176e6967df4d8715",
+                "reference": "0ad82c83c02bd52e1e0dcfc1176e6967df4d8715",
                 "shasum": ""
             },
             "require-dev": {
@@ -127,7 +127,7 @@
                 "Apache-2.0"
             ],
             "description": "PHP library for hydrating/manipulating CultuurNet's Cdb XML documents",
-            "time": "2015-05-18 09:57:11"
+            "time": "2015-05-19 11:04:57"
         },
         {
             "name": "cultuurnet/culturefeed-php",
@@ -135,12 +135,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cultuurnet/culturefeed-php.git",
-                "reference": "21e8643feb0c4322e6aea9ae497514ff46d6602f"
+                "reference": "c4598360f28cd4948900490fbc618ccdc95346ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cultuurnet/culturefeed-php/zipball/21e8643feb0c4322e6aea9ae497514ff46d6602f",
-                "reference": "21e8643feb0c4322e6aea9ae497514ff46d6602f",
+                "url": "https://api.github.com/repos/cultuurnet/culturefeed-php/zipball/c4598360f28cd4948900490fbc618ccdc95346ef",
+                "reference": "c4598360f28cd4948900490fbc618ccdc95346ef",
                 "shasum": ""
             },
             "require": {
@@ -194,7 +194,7 @@
                 }
             ],
             "description": "Culturefeed PHP library",
-            "time": "2015-05-18 11:10:43"
+            "time": "2015-05-19 12:18:17"
         },
         {
             "name": "cultuurnet/search",
