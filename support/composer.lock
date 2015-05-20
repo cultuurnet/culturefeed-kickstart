@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "72bd61452a608f8bb3d3a74d4be8e7fd",
+    "hash": "0c0ef14be5f61d4a1a3c57ef76f60627",
     "packages": [
         {
             "name": "cultuurnet/auth",
@@ -244,16 +244,16 @@
         },
         {
             "name": "cultuurnet/sitemap-xml",
-            "version": "v1.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cultuurnet/sitemap-xml-php.git",
-                "reference": "a2d584ac3450c6b2f6fb02d63b71323dc29ab2e3"
+                "reference": "f72a54efa107703082c68374180c0969c0151793"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cultuurnet/sitemap-xml-php/zipball/a2d584ac3450c6b2f6fb02d63b71323dc29ab2e3",
-                "reference": "a2d584ac3450c6b2f6fb02d63b71323dc29ab2e3",
+                "url": "https://api.github.com/repos/cultuurnet/sitemap-xml-php/zipball/f72a54efa107703082c68374180c0969c0151793",
+                "reference": "f72a54efa107703082c68374180c0969c0151793",
                 "shasum": ""
             },
             "require": {
@@ -282,7 +282,7 @@
                 }
             ],
             "description": "Library for writing sitemap XML.",
-            "time": "2015-05-20 09:13:42"
+            "time": "2015-05-20 12:12:07"
         },
         {
             "name": "guzzle/common",

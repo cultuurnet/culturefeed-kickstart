@@ -6,7 +6,7 @@
     "leafo/lessphp": ">=0.3.7",
     "mobiledetect/mobiledetectlib": "dev-master",
     "cultuurnet/calendar-summary": "~1.0",
-    "cultuurnet/sitemap-xml": "~1.0"
+    "cultuurnet/sitemap-xml": "~1.0.1"
   },
   "minimum-stability": "dev",
   "prefer-stable": true
