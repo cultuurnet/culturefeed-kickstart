@@ -1,5 +1,6 @@
 {
   "require": {
+    "composer/composer": "~1.0",
     "cultuurnet/culturefeed-php": "~1.5",
     "cultuurnet/search": "~1.2",
     "cultuurnet/cdb": "~2.1",
