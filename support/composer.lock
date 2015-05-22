@@ -170,12 +170,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cultuurnet/Cdb.git",
-                "reference": "0ad82c83c02bd52e1e0dcfc1176e6967df4d8715"
+                "reference": "1273c561d60a5d548260f3184312f0c7bbe81ea4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cultuurnet/Cdb/zipball/0ad82c83c02bd52e1e0dcfc1176e6967df4d8715",
-                "reference": "0ad82c83c02bd52e1e0dcfc1176e6967df4d8715",
+                "url": "https://api.github.com/repos/cultuurnet/Cdb/zipball/1273c561d60a5d548260f3184312f0c7bbe81ea4",
+                "reference": "1273c561d60a5d548260f3184312f0c7bbe81ea4",
                 "shasum": ""
             },
             "require-dev": {
@@ -195,7 +195,7 @@
                 "Apache-2.0"
             ],
             "description": "PHP library for hydrating/manipulating CultuurNet's Cdb XML documents",
-            "time": "2015-05-19 11:04:57"
+            "time": "2015-05-22 08:48:28"
         },
         {
             "name": "cultuurnet/culturefeed-php",
@@ -203,12 +203,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cultuurnet/culturefeed-php.git",
-                "reference": "8b44c643afd66acd19bf01150811c51dd43d3364"
+                "reference": "30d031f18a518737ce2ade78216d6b77f188acde"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cultuurnet/culturefeed-php/zipball/8b44c643afd66acd19bf01150811c51dd43d3364",
-                "reference": "8b44c643afd66acd19bf01150811c51dd43d3364",
+                "url": "https://api.github.com/repos/cultuurnet/culturefeed-php/zipball/30d031f18a518737ce2ade78216d6b77f188acde",
+                "reference": "30d031f18a518737ce2ade78216d6b77f188acde",
                 "shasum": ""
             },
             "require": {
@@ -262,7 +262,7 @@
                 }
             ],
             "description": "Culturefeed PHP library",
-            "time": "2015-05-19 18:46:34"
+            "time": "2015-05-22 08:54:51"
         },
         {
             "name": "cultuurnet/search",
@@ -270,17 +270,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cultuurnet/Search.git",
-                "reference": "9aef6c472b321c883ee090c439014dd009b7f0b0"
+                "reference": "fa5c1037f53542f81ee28ade0bf86c5afed3b800"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cultuurnet/Search/zipball/9aef6c472b321c883ee090c439014dd009b7f0b0",
-                "reference": "9aef6c472b321c883ee090c439014dd009b7f0b0",
+                "url": "https://api.github.com/repos/cultuurnet/Search/zipball/fa5c1037f53542f81ee28ade0bf86c5afed3b800",
+                "reference": "fa5c1037f53542f81ee28ade0bf86c5afed3b800",
                 "shasum": ""
             },
             "require": {
                 "cultuurnet/auth": "~1.1",
-                "cultuurnet/cdb": "~2.0",
+                "cultuurnet/cdb": "~2.1",
                 "php": ">=5.3.0",
                 "symfony/console": "~2.5"
             },
@@ -308,7 +308,7 @@
                 "Apache-2.0"
             ],
             "description": "CultuurNet search service",
-            "time": "2015-05-19 18:46:03"
+            "time": "2015-05-22 09:05:22"
         },
         {
             "name": "guzzle/common",
@@ -352,7 +352,6 @@
                 "event",
                 "exception"
             ],
-            "abandoned": "guzzle/guzzle",
             "time": "2014-08-11 04:32:36"
         },
         {
@@ -410,7 +409,6 @@
                 "http",
                 "http client"
             ],
-            "abandoned": "guzzle/guzzle",
             "time": "2014-08-11 04:32:36"
         },
         {
@@ -463,7 +461,6 @@
                 "adapter",
                 "log"
             ],
-            "abandoned": "guzzle/guzzle",
             "time": "2014-03-26 17:15:28"
         },
         {
@@ -508,7 +505,6 @@
                 "message",
                 "url"
             ],
-            "abandoned": "guzzle/guzzle",
             "time": "2014-02-05 18:29:46"
         },
         {
@@ -558,7 +554,6 @@
                 "Guzzle",
                 "plugin"
             ],
-            "abandoned": "guzzle/guzzle",
             "time": "2014-02-07 18:36:58"
         },
         {
@@ -610,7 +605,6 @@
                 "log",
                 "plugin"
             ],
-            "abandoned": "guzzle/guzzle",
             "time": "2014-01-08 21:45:39"
         },
         {
@@ -661,7 +655,6 @@
                 "oauth",
                 "plugin"
             ],
-            "abandoned": "guzzle/guzzle",
             "time": "2014-04-16 13:26:19"
         },
         {
@@ -715,7 +708,6 @@
                 "component",
                 "stream"
             ],
-            "abandoned": "guzzle/guzzle",
             "time": "2014-05-01 21:36:02"
         },
         {
