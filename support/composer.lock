@@ -59,12 +59,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cultuurnet/calendar-summary.git",
-                "reference": "616b188c6c80a3ea49048c5c60785d27312fd4ac"
+                "reference": "431484bb2759f33ff18ea186c2cf5109440a6a2b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cultuurnet/calendar-summary/zipball/616b188c6c80a3ea49048c5c60785d27312fd4ac",
-                "reference": "616b188c6c80a3ea49048c5c60785d27312fd4ac",
+                "url": "https://api.github.com/repos/cultuurnet/calendar-summary/zipball/431484bb2759f33ff18ea186c2cf5109440a6a2b",
+                "reference": "431484bb2759f33ff18ea186c2cf5109440a6a2b",
                 "shasum": ""
             },
             "require": {
@@ -94,31 +94,27 @@
                 "Apache-2.0"
             ],
             "description": "Library to convert a cdbXML input to a readable summary",
-            "time": "2015-05-08 15:08:54"
+            "time": "2015-05-27 09:14:32"
         },
         {
             "name": "cultuurnet/cdb",
-            "version": "v2.0.2",
+            "version": "v2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cultuurnet/Cdb.git",
-                "reference": "1d0d67517444df548d8787835276b50a21c4eb34"
+                "reference": "1273c561d60a5d548260f3184312f0c7bbe81ea4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cultuurnet/Cdb/zipball/1d0d67517444df548d8787835276b50a21c4eb34",
-                "reference": "1d0d67517444df548d8787835276b50a21c4eb34",
+                "url": "https://api.github.com/repos/cultuurnet/Cdb/zipball/1273c561d60a5d548260f3184312f0c7bbe81ea4",
+                "reference": "1273c561d60a5d548260f3184312f0c7bbe81ea4",
                 "shasum": ""
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.3"
+                "phpunit/phpunit": "~4.3",
+                "satooshi/php-coveralls": "~0.7"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-release/2.x": "2.x-dev"
-                }
-            },
             "autoload": {
                 "psr-0": {
                     "CultureFeed_Cdb_": [
@@ -131,27 +127,28 @@
                 "Apache-2.0"
             ],
             "description": "PHP library for hydrating/manipulating CultuurNet's Cdb XML documents",
-            "time": "2015-01-16 15:17:03"
+            "time": "2015-05-22 08:48:28"
         },
         {
             "name": "cultuurnet/culturefeed-php",
-            "version": "v1.4.1",
+            "version": "v1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cultuurnet/culturefeed-php.git",
-                "reference": "f7dba430982fb9538747a92eea4ee2dc35e038d8"
+                "reference": "1663b23dbf5b4adcac0aeab4b4526f8351a493af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cultuurnet/culturefeed-php/zipball/f7dba430982fb9538747a92eea4ee2dc35e038d8",
-                "reference": "f7dba430982fb9538747a92eea4ee2dc35e038d8",
+                "url": "https://api.github.com/repos/cultuurnet/culturefeed-php/zipball/1663b23dbf5b4adcac0aeab4b4526f8351a493af",
+                "reference": "1663b23dbf5b4adcac0aeab4b4526f8351a493af",
                 "shasum": ""
             },
             "require": {
-                "cultuurnet/cdb": "~2.0"
+                "cultuurnet/cdb": "~2.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.4.0"
+                "phpunit/phpunit": "~4.4.0",
+                "satooshi/php-coveralls": "~0.7"
             },
             "type": "library",
             "extra": {
@@ -197,25 +194,25 @@
                 }
             ],
             "description": "Culturefeed PHP library",
-            "time": "2015-05-04 15:35:41"
+            "time": "2015-05-26 14:42:23"
         },
         {
             "name": "cultuurnet/search",
-            "version": "v1.1.2",
+            "version": "v1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cultuurnet/Search.git",
-                "reference": "048ad13ac386c3676dd3236c064f4184a10c1d73"
+                "reference": "7737becd0e26013264573ce138d2744c899246cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cultuurnet/Search/zipball/048ad13ac386c3676dd3236c064f4184a10c1d73",
-                "reference": "048ad13ac386c3676dd3236c064f4184a10c1d73",
+                "url": "https://api.github.com/repos/cultuurnet/Search/zipball/7737becd0e26013264573ce138d2744c899246cb",
+                "reference": "7737becd0e26013264573ce138d2744c899246cb",
                 "shasum": ""
             },
             "require": {
                 "cultuurnet/auth": "~1.1",
-                "cultuurnet/cdb": "~2.0",
+                "cultuurnet/cdb": "~2.1",
                 "php": ">=5.3.0",
                 "symfony/console": "~2.5"
             },
@@ -243,7 +240,7 @@
                 "Apache-2.0"
             ],
             "description": "CultuurNet search service",
-            "time": "2015-04-24 10:53:19"
+            "time": "2015-05-27 16:14:23"
         },
         {
             "name": "guzzle/common",
@@ -816,17 +813,17 @@
         },
         {
             "name": "symfony/console",
-            "version": "v2.6.6",
+            "version": "v2.6.8",
             "target-dir": "Symfony/Component/Console",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "5b91dc4ed5eb08553f57f6df04c4730a73992667"
+                "reference": "2343f6d8026306bd330e0c987e4c102483c213e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/5b91dc4ed5eb08553f57f6df04c4730a73992667",
-                "reference": "5b91dc4ed5eb08553f57f6df04c4730a73992667",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/2343f6d8026306bd330e0c987e4c102483c213e7",
+                "reference": "2343f6d8026306bd330e0c987e4c102483c213e7",
                 "shasum": ""
             },
             "require": {
@@ -860,31 +857,31 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "Symfony Console Component",
-            "homepage": "http://symfony.com",
-            "time": "2015-03-30 15:54:10"
+            "homepage": "https://symfony.com",
+            "time": "2015-05-22 14:53:08"
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v2.6.6",
+            "version": "v2.6.8",
             "target-dir": "Symfony/Component/EventDispatcher",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/EventDispatcher.git",
-                "reference": "70f7c8478739ad21e3deef0d977b38c77f1fb284"
+                "reference": "672593bc4b0043a0acf91903bb75a1c82d8f2e02"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/70f7c8478739ad21e3deef0d977b38c77f1fb284",
-                "reference": "70f7c8478739ad21e3deef0d977b38c77f1fb284",
+                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/672593bc4b0043a0acf91903bb75a1c82d8f2e02",
+                "reference": "672593bc4b0043a0acf91903bb75a1c82d8f2e02",
                 "shasum": ""
             },
             "require": {
@@ -919,17 +916,17 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "Symfony EventDispatcher Component",
-            "homepage": "http://symfony.com",
-            "time": "2015-03-13 17:37:22"
+            "homepage": "https://symfony.com",
+            "time": "2015-05-02 15:18:45"
         }
     ],
     "packages-dev": [],
