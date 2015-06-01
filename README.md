@@ -22,3 +22,9 @@ On new servers make sure unzip is installed (for drush make) and gd, curl and mo
 To make correct OAuth requests make sure date (date) and timezone is correct
 - sudo dpkg-reconfigure tzdata
 
+To install the profile, run the following command from the drupal root:
+
+	drush site-install culturefeed_kickstart --account-mail=yourAdmin@email --account-name=adminUsername --account-pass=adminPassword --site-name=CFKickStart --site-mail=yourSite@email --locale=ISOCode --db-url=mysql://dbUsername:dbPassword@localhost/dbName -y
+		
+Be sure to replace all values with your own values.
+
