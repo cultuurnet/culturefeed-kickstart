@@ -1,7 +1,7 @@
 {
   "require": {
     "composer/composer": "~1.0",
-    "cultuurnet/culturefeed-php": "~1.5",
+    "cultuurnet/culturefeed-php": "dev-feature/MSS-181",
     "cultuurnet/search": "~1.2",
     "cultuurnet/cdb": "~2.1",
     "leafo/lessphp": ">=0.3.7",
