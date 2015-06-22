@@ -41,7 +41,6 @@ function culturefeed_kickstart_install() {
       'pages' => "agenda/e/*\r\nagenda/p/*",
       'visibility' => 1,
       'cache' => -1,
-      'title' => '',
       'title' => ''
     ),
     array(
@@ -63,6 +62,7 @@ function culturefeed_kickstart_install() {
       'weight' => 1,
       'region' => 'header',
       'pages' => 'agenda/*',
+      'visibility' => 1,
       'cache' => -1,
       'title' => ''
     ),
