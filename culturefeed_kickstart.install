@@ -59,10 +59,9 @@ function culturefeed_kickstart_install() {
       'delta' => 'agenda-event-types',
       'theme' => $default_theme,
       'status' => 1,
-      'weight' => 1,
+      'weight' => -33,
       'region' => 'header',
-      'pages' => 'agenda/*',
-      'visibility' => 1,
+      'pages' => '',
       'cache' => -1,
       'title' => ''
     ),
