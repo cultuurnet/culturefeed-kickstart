@@ -140,3 +140,8 @@ function culturefeed_kickstart_credentials_form_submit($form, &$form_state) {
   // Can be replaced with any other kind of log module after installation.
   module_enable(array('dblog'));
 }
+
+function culturefeed_kickstart_profile_details(){
+  $details['language'] = "nl";
+  return $details;
+}

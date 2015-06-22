@@ -12,7 +12,6 @@ dependencies[] = culturefeed_search_views
 
 dependencies[] = googleanalytics
 dependencies[] = module_filter
-dependencies[] = devel
 dependencies[] = image
 dependencies[] = admin_menu_toolbar
 dependencies[] = libraries
@@ -21,6 +20,7 @@ dependencies[] = imce
 dependencies[] = imce_wysiwyg
 dependencies[] = wysiwyg
 dependencies[] = views
+dependencies[] = views_ui
 dependencies[] = ctools
 dependencies[] = date
 dependencies[] = token
