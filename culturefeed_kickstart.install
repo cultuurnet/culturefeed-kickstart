@@ -57,6 +57,28 @@ function culturefeed_kickstart_install() {
     ),
     array(
       'module' => 'culturefeed_agenda',
+      'delta' => 'agenda-event-types',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => 1,
+      'region' => 'header',
+      'pages' => 'agenda/*',
+      'cache' => -1,
+      'title' => ''
+    ),
+    array(
+      'module' => 'culturefeed_agenda',
+      'delta' => 'agenda-actor-search',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => 1,
+      'region' => 'sidebar_first',
+      'pages' => '',
+      'cache' => -1,
+      'title' => ''
+    ),
+    array(
+      'module' => 'culturefeed_agenda',
       'delta' => 'actor-program',
       'theme' => $default_theme,
       'status' => 1,
