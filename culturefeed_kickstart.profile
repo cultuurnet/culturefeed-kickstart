@@ -40,6 +40,8 @@ function culturefeed_kickstart_credentials_form($form, &$form_state, &$install_s
     'culturefeed_api_application_key' => 'e36c2db19aeb6d2760ce0500d393e83c',
     'culturefeed_api_shared_secret' => 'f0d991505f50d5da23b1157bce133aa9',
     'culturefeed_entry_api_location' => 'http://acc.uitid.be/uitid/rest/',
+    'culturefeed_entry_api_application_key' => 'e36c2db19aeb6d2760ce0500d393e83c',
+    'culturefeed_entry_api_shared_secret' => 'f0d991505f50d5da23b1157bce133aa9',
   );
 
   $form['culturefeed'] = array(
@@ -109,6 +111,22 @@ function culturefeed_kickstart_credentials_form($form, &$form_state, &$install_s
     '#default_value' => $defaults['culturefeed_entry_api_location'],
     '#description' => t('The URL where the CultuurNet Entry API resides. End with a slash. Example: http://build.uitdatabank.be/'),
     '#element_validate' => array('culturefeed_kickstart_api_location_validate'),
+  );
+
+  $form['entry_api']['culturefeed_entry_api_application_key'] = array(
+    '#title' => t('API key'),
+    '#type' => 'textfield',
+    '#default_value' => $defaults['culturefeed_entry_api_application_key'],
+    '#required' => TRUE,
+    '#description' => t('Your CultureFeed Entry API key'),
+  );
+
+  $form['entry_api']['culturefeed_entry_api_shared_secret'] = array(
+    '#title' => t('Shared secret'),
+    '#type' => 'textfield',
+    '#default_value' => $defaults['culturefeed_entry_api_shared_secret'],
+    '#required' => TRUE,
+    '#description' => t('Your CultureFeed Entry API shared secret'),
   );
 
   $form['submit'] = array(
