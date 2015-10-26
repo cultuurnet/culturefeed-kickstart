@@ -188,7 +188,7 @@ function culturefeed_kickstart_api_path_validate($element, &$form_state, $form) 
  * @param unknown $form_state
  */
 function culturefeed_kickstart_credentials_form_submit($form, &$form_state) {
-  $fieldsets = array('search_api', 'culturefeed');
+  $fieldsets = array('search_api', 'culturefeed', 'entry_api');
   foreach ($fieldsets as $fieldset) {
     $children = element_children($form[$fieldset]);
 
