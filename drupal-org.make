@@ -17,6 +17,7 @@ projects[] = pathauto
 projects[] = globalredirect
 projects[] = jquery_update
 projects[] = redirect
+projects[] = link
 projects[bootstrap][version] = 3.0
 projects[less][version] = 3.0
 
