@@ -1,5 +1,5 @@
 api = 2
-core = 7.x 
+core = 7.x
 
 projects[] = google_analytics
 projects[] = devel
@@ -18,17 +18,18 @@ projects[] = globalredirect
 projects[] = jquery_update
 projects[] = redirect
 projects[] = link
+projects[] = transliteration
 projects[bootstrap][version] = 3.0
 projects[less][version] = 3.0
 
 projects[culturefeed][type] = module
 projects[culturefeed][download][type] = git
-projects[culturefeed][download][branch] = "develop"
+projects[culturefeed][download][branch] = "master"
 projects[culturefeed][download][url] = https://github.com/cultuurnet/culturefeed.git
 
 projects[culturefeed_bootstrap][type] = theme
 projects[culturefeed_bootstrap][download][type] = git
-projects[culturefeed_bootstrap][download][branch] = "develop"
+projects[culturefeed_bootstrap][download][branch] = "master"
 projects[culturefeed_bootstrap][download][url] = https://github.com/cultuurnet/culturefeed_bootstrap.git
 
 libraries[tinymce][download][type] = get

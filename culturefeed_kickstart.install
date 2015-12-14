@@ -409,6 +409,7 @@ function culturefeed_kickstart_install() {
   
   // Set drupal variables
   variable_set('menu_secondary_links_source', '');
+  variable_set('user_register', USER_REGISTER_ADMINISTRATORS_ONLY);
   
   // Set jquery_update variables
   variable_set('jquery_update_jquery_version', '1.8');

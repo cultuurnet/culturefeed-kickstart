@@ -29,3 +29,4 @@ dependencies[] = globalredirect
 dependencies[] = jquery_update
 dependencies[] = redirect
 dependencies[] = link
+dependencies[] = transliteration
