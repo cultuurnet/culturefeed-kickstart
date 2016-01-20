@@ -18,6 +18,7 @@ projects[] = globalredirect
 projects[] = jquery_update
 projects[] = redirect
 projects[] = transliteration
+projects[] = link
 projects[bootstrap][version] = 3.0
 projects[less][version] = 3.0
 

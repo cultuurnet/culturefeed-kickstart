@@ -41,7 +41,6 @@ function culturefeed_kickstart_install() {
       'pages' => "agenda/e/*\r\nagenda/p/*",
       'visibility' => 1,
       'cache' => -1,
-      'title' => '',
       'title' => ''
     ),
     array(
@@ -60,9 +59,9 @@ function culturefeed_kickstart_install() {
       'delta' => 'agenda-event-types',
       'theme' => $default_theme,
       'status' => 1,
-      'weight' => 1,
+      'weight' => -33,
       'region' => 'header',
-      'pages' => 'agenda/*',
+      'pages' => '',
       'cache' => -1,
       'title' => ''
     ),
@@ -198,6 +197,18 @@ function culturefeed_kickstart_install() {
       'visibility' => 1,
       'cache' => -1,
       'title' => 'Extra filters'
+    ),
+    array(
+      'module' => 'culturefeed_search_ui',
+      'delta' => 'filter-form-2',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => -40,
+      'region' => 'content',
+      'pages' => 'agenda/search',
+      'visibility' => 1,
+      'cache' => -1,
+      'title' => ''
     ),
 
     

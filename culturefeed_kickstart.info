@@ -28,3 +28,4 @@ dependencies[] = pathauto
 dependencies[] = globalredirect
 dependencies[] = jquery_update
 dependencies[] = redirect
+dependencies[] = link
