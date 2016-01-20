@@ -30,20 +30,15 @@ function culturefeed_kickstart_credentials_form($form, &$form_state, &$install_s
   
   drupal_set_title(st('CultureFeed credentials'));
 
-  // @todo Get defaults from a webservice in the previous step?
-  $defaults = array();
-  $defaults += array(
-    'culturefeed_search_api_location' => 'http://acc.uitid.be/uitid/rest/searchv2/',
-    'culturefeed_search_api_application_key' => 'e36c2db19aeb6d2760ce0500d393e83c',
-    'culturefeed_search_api_shared_secret' => 'f0d991505f50d5da23b1157bce133aa9',
+  $defaults = array(
     'culturefeed_api_location' => 'http://acc.uitid.be/uitid/rest/',
     'culturefeed_api_application_key' => 'e36c2db19aeb6d2760ce0500d393e83c',
     'culturefeed_api_shared_secret' => 'f0d991505f50d5da23b1157bce133aa9',
+    'culturefeed_search_api_location' => 'http://acc.uitid.be/uitid/rest/searchv2/',
+    'culturefeed_search_api_application_key' => 'e36c2db19aeb6d2760ce0500d393e83c',
+    'culturefeed_search_api_shared_secret' => 'f0d991505f50d5da23b1157bce133aa9',
     'culturefeed_entry_api_location' => 'https://udb-silex-test.uitdatabank.be/rest/',
     'culturefeed_entry_api_path' => 'entry/',
-    'culturefeed_entry_cdb_version' => '3.3',
-    'culturefeed_entry_api_application_key' => 'e36c2db19aeb6d2760ce0500d393e83c',
-    'culturefeed_entry_api_shared_secret' => 'f0d991505f50d5da23b1157bce133aa9',
   );
 
   $form['culturefeed'] = array(
@@ -121,29 +116,6 @@ function culturefeed_kickstart_credentials_form($form, &$form_state, &$install_s
     '#default_value' => $defaults['culturefeed_entry_api_path'],
     '#description' => t('The path where the CultuurNet Entry API resides. End with a slash. Example: entry/'),
     '#element_validate' => array('culturefeed_kickstart_api_path_validate'),
-  );
-
-  $form['entry_api']['culturefeed_entry_cdb_version'] = array(
-    '#title' => t('Cdb Version'),
-    '#type' => t('textfield'),
-    '#default_value' => $defaults['culturefeed_entry_cdb_version'],
-    '#description' => t('The CdbXml version to use'),
-  );
-
-  $form['entry_api']['culturefeed_entry_api_application_key'] = array(
-    '#title' => t('API key'),
-    '#type' => 'textfield',
-    '#default_value' => $defaults['culturefeed_entry_api_application_key'],
-    '#required' => TRUE,
-    '#description' => t('Your CultureFeed Entry API key'),
-  );
-
-  $form['entry_api']['culturefeed_entry_api_shared_secret'] = array(
-    '#title' => t('Shared secret'),
-    '#type' => 'textfield',
-    '#default_value' => $defaults['culturefeed_entry_api_shared_secret'],
-    '#required' => TRUE,
-    '#description' => t('Your CultureFeed Entry API shared secret'),
   );
 
   $form['submit'] = array(
