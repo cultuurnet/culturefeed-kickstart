@@ -30,15 +30,15 @@ function culturefeed_kickstart_credentials_form($form, &$form_state, &$install_s
   
   drupal_set_title(st('CultureFeed credentials'));
 
-  // @todo Get defaults from a webservice in the previous step?
-  $defaults = array();
-  $defaults += array(
-    'culturefeed_search_api_location' => 'http://acc.uitid.be/uitid/rest/searchv2/',
-    'culturefeed_search_api_application_key' => 'e36c2db19aeb6d2760ce0500d393e83c',
-    'culturefeed_search_api_shared_secret' => 'f0d991505f50d5da23b1157bce133aa9',
+  $defaults = array(
     'culturefeed_api_location' => 'http://acc.uitid.be/uitid/rest/',
     'culturefeed_api_application_key' => 'e36c2db19aeb6d2760ce0500d393e83c',
     'culturefeed_api_shared_secret' => 'f0d991505f50d5da23b1157bce133aa9',
+    'culturefeed_search_api_location' => 'http://acc.uitid.be/uitid/rest/searchv2/',
+    'culturefeed_search_api_application_key' => 'e36c2db19aeb6d2760ce0500d393e83c',
+    'culturefeed_search_api_shared_secret' => 'f0d991505f50d5da23b1157bce133aa9',
+    'culturefeed_entry_api_location' => 'http://acc.uitid.be/uitid/rest/',
+    'culturefeed_entry_api_path' => 'entry/test.rest.uitdatabank.be/api/v3/',
   );
 
   $form['culturefeed'] = array(
@@ -97,6 +97,27 @@ function culturefeed_kickstart_credentials_form($form, &$form_state, &$install_s
     '#description' => t('Your CultureFeed Search API shared secret'),
   );
 
+  $form['entry_api'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Entry API'),
+  );
+
+  $form['entry_api']['culturefeed_entry_api_location'] = array(
+    '#title' => t('API location'),
+    '#type' => t('textfield'),
+    '#default_value' => $defaults['culturefeed_entry_api_location'],
+    '#description' => t('The URL where the CultuurNet Entry API resides. End with a slash. Example: http://build.uitdatabank.be/'),
+    '#element_validate' => array('culturefeed_kickstart_api_location_validate'),
+  );
+
+  $form['entry_api']['culturefeed_entry_api_path'] = array(
+    '#title' => t('API path'),
+    '#type' => t('textfield'),
+    '#default_value' => $defaults['culturefeed_entry_api_path'],
+    '#description' => t('The path where the CultuurNet Entry API resides. End with a slash. Example: entry/'),
+    '#element_validate' => array('culturefeed_kickstart_api_path_validate'),
+  );
+
   $form['submit'] = array(
     '#type' => 'submit',
     '#value' => t('Continue'),
@@ -122,12 +143,24 @@ function culturefeed_kickstart_api_location_validate($element, &$form_state, $fo
 }
 
 /**
+ * Validator for the api path.
+ * @param $element
+ * @param $form_state
+ * @param $form
+ */
+function culturefeed_kickstart_api_path_validate($element, &$form_state, $form) {
+  if (drupal_substr($element['#value'], -1) !== '/') {
+    return form_error($element, t('!name needs to end with a slash.', array('!name' => $element['title'])));
+  }
+}
+
+/**
  * Submit function to continue the installation process.
  * @param unknown $form
  * @param unknown $form_state
  */
 function culturefeed_kickstart_credentials_form_submit($form, &$form_state) {
-  $fieldsets = array('search_api', 'culturefeed');
+  $fieldsets = array('search_api', 'culturefeed', 'entry_api');
   foreach ($fieldsets as $fieldset) {
     $children = element_children($form[$fieldset]);
 
