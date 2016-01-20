@@ -37,8 +37,8 @@ function culturefeed_kickstart_credentials_form($form, &$form_state, &$install_s
     'culturefeed_search_api_location' => 'http://acc.uitid.be/uitid/rest/searchv2/',
     'culturefeed_search_api_application_key' => 'e36c2db19aeb6d2760ce0500d393e83c',
     'culturefeed_search_api_shared_secret' => 'f0d991505f50d5da23b1157bce133aa9',
-    'culturefeed_entry_api_location' => 'https://udb-silex-test.uitdatabank.be/rest/',
-    'culturefeed_entry_api_path' => 'entry/',
+    'culturefeed_entry_api_location' => 'http://acc.uitid.be/uitid/rest/',
+    'culturefeed_entry_api_path' => 'entry/test.rest.uitdatabank.be/api/v2/',
   );
 
   $form['culturefeed'] = array(
