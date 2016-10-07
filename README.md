@@ -12,7 +12,7 @@ Drupal installation profile with culturefeed 3.x branche
 
 ## Get started
 
-To build your site just run **'sh build.sh'** in the root of the culturefeed-kickstart project. 
+1) To build your site just run **'sh build.sh'** in the root of the culturefeed-kickstart project. 
 
 On new servers make sure unzip is installed (for drush make) and gd, curl and mod_rewrite  (for drupal)
 - sudo apt-get install unzip
@@ -24,7 +24,7 @@ On new servers make sure unzip is installed (for drush make) and gd, curl and mo
 To make correct OAuth requests make sure date (date) and timezone is correct
 - sudo dpkg-reconfigure tzdata
 
-To install the profile, run the following command from the drupal root:
+2) To install the profile, run the following command from the drupal root of your new created site:
 
 	drush site-install culturefeed_kickstart --account-mail=yourAdmin@email --account-name=adminUsername --account-pass=adminPassword --site-name=CFKickStart --site-mail=yourSite@email --locale=ISOCode --db-url=mysql://dbUsername:dbPassword@localhost/dbName -y
 		
