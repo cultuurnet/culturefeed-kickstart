@@ -33,10 +33,10 @@ function culturefeed_kickstart_credentials_form($form, &$form_state, &$install_s
   // @todo Get defaults from a webservice in the previous step?
   $defaults = array();
   $defaults += array(
-    'culturefeed_search_api_location' => 'http://acc.uitid.be/uitid/rest/searchv2/',
+    'culturefeed_search_api_location' => 'https://test.uitid.be/uitid/rest/searchv2/',
     'culturefeed_search_api_application_key' => 'e36c2db19aeb6d2760ce0500d393e83c',
     'culturefeed_search_api_shared_secret' => 'f0d991505f50d5da23b1157bce133aa9',
-    'culturefeed_api_location' => 'http://acc.uitid.be/uitid/rest/',
+    'culturefeed_api_location' => 'https://test.uitid.be/uitid/rest/',
     'culturefeed_api_application_key' => 'e36c2db19aeb6d2760ce0500d393e83c',
     'culturefeed_api_shared_secret' => 'f0d991505f50d5da23b1157bce133aa9',
   );
@@ -50,7 +50,7 @@ function culturefeed_kickstart_credentials_form($form, &$form_state, &$install_s
     '#title' => t('API location'),
     '#type' => t('textfield'),
     '#default_value' => $defaults['culturefeed_api_location'],
-    '#description' => t('The URL where the CultuurNet API resides. End with a slash. Example: http://build.uitdatabank.be/'),
+    '#description' => t('The URL where the CultuurNet API resides. End with a slash. Example: https://test.uitid.be/uitid/rest/'),
     '#element_validate' => array('culturefeed_kickstart_api_location_validate'),
   );
 
@@ -77,7 +77,7 @@ function culturefeed_kickstart_credentials_form($form, &$form_state, &$install_s
     '#title' => t('API location'),
     '#type' => t('textfield'),
     '#default_value' => $defaults['culturefeed_search_api_location'],
-    '#description' => t('The URL where the CultuurNet Search API resides. End with a slash. Example: http://build.uitdatabank.be/'),
+    '#description' => t('The URL where the CultuurNet Search API resides. End with a slash. Example: https://test.uitid.be/uitid/rest/searchv2/'),
     '#element_validate' => array('culturefeed_kickstart_api_location_validate'),
   );
 
